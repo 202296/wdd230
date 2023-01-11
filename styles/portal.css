@@ -1,5 +1,5 @@
 header {display: grid;
-    background-color: blue; border-radius: 3%; box-shadow: 0px 0px 20px #000;}
+    background-color: blue; border-radius: 3%; box-shadow: 0px 0px 20px #000; max-width: 960px;}
 
 header .name { grid-column: auto; font-size: 55px; font-family: 'Times New Roman', Times, serif; text-shadow: 5px 5px #000; margin-left: 220px; text-align: center; color: white;}
 
@@ -23,7 +23,7 @@ footer p { color: yellow; margin-top: 5px; text-align: center;}
 
 nav a { text-decoration: none;}
 
-@media only screen and (max-width: 600px) {
-    hr { margin-top: -15px;}
-    main .theme { margin-top: 20px;}
+@media only screen and (max-width: 550px) {
+    hr { margin-top: -5px;}
+    main .theme { margin-top: 20px; font-size: 3vw;}
   }
