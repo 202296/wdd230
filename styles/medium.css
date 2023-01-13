@@ -1,0 +1,8 @@
+@media only screen and (min-width: 32.5em) {
+    hr { margin-top: -10px;}
+    main .theme { margin-top: 20px; font-size: 1.2rem; font-family: 'Roboto', sans-serif; font-weight: bolder;}
+    header .name { font-size: 3rem; margin-left: 255px; font-family: 'Roboto', sans-serif; font-weight: bolder;}
+    header img { max-width: 170px; height: auto;}
+    p {font-family: 'Open Sans', sans-serif;}
+    footer {font-family: 'Open Sans', sans-serif;}
+} 
