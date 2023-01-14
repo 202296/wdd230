@@ -1,12 +1,12 @@
-header {background-color: blue; text-align: center; color: white; font-size: 10; padding: 10px 0 10px 0; font-family: 'Roboto', sans-serif;}
+header {background-color: blue; text-align: center; color: white; font-size: 10px; padding: 10px 0 10px 0; font-family: 'Roboto', sans-serif;}
 body {  max-width: 520px; margin: -20px auto auto auto ; background-color: azure;}
 header h3 { font-size: 15px; font-family: 'Roboto', sans-serif; font-weight: bold;}
-main { display: grid; grid-template-rows: auto auto auto; grid-row-gap: 7px; justify-content: center; margin-top: -8px auto;}
+main { display: grid; grid-template-rows: auto auto auto; grid-row-gap: 7px; justify-content: center; margin-top: -8px;}
 a {font-size: 21px; padding-left: 5px; font-family: 'Open Sans', sans-serif;}
 p { margin-top: 5px; padding-left: 5px; font-family: 'Open Sans', sans-serif; font-size: 20px;}
 section h1 {background-color: blue; font-size: 25px; color: white; padding: 7px 0px 7px 5px; font-family: 'Roboto', sans-serif;}
 img { max-width: 320px; margin-top: 8px; padding-left: 5px;}
 h3 { margin-top: -8px; margin-bottom: -3px; padding-left: 5px; font-size: 22px; font-weight: bold; font-family: 'Open Sans', sans-serif;}
 footer { background-color: blue; text-align: center; 
-    color: white; padding: 10px 0px 10px 0px; font-family: 'Roboto', sans-serif; font-weight: 600px;}
+    color: white; padding: 10px 0px 10px 0px; font-family: 'Roboto', sans-serif; font-weight: bolder;}
 section { padding: 0px 10px;}
