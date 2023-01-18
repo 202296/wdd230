@@ -1,12 +1,79 @@
-header {background-color: blue; text-align: center; color: white; font-size: 35px; padding: 10px 0; font-family: 'Roboto', sans-serif; border-radius: 15px;}
-body {  max-width: 1600px; margin: auto ;  align-items: center; padding: 30px;}
-header h2 { font-size: 40px; font-family: 'Roboto', sans-serif; font-weight: bold;}
-main { display: grid; grid-template-rows: auto auto auto; grid-row-gap: 7px; margin-top: 45px;}
-a {font-size: 23px; padding-left: 5px; font-family: 'Open Sans', sans-serif;}
-p { margin-top: 5px; padding-left: 5px; font-family: 'Open Sans', sans-serif; font-size: 25px;}
-section h2 {background-color: blue; font-size: 30px; color: white; padding: 7px 0px 7px 5px; font-family: 'Roboto', sans-serif; border-radius: 15px; text-align: center;}
-img { max-width: 390px; padding-left: 5px; max-height: 644px; align-self: center; margin-top: 5px;}
-h3 { margin-top: -8px; margin-bottom: -3px; padding-left: 5px; font-size: 25px; font-weight: bold; font-family: 'Open Sans', sans-serif;}
-footer { background-color: blue; text-align: center; 
-    color: white; padding: 10px 0; font-family: 'Roboto', sans-serif; font-weight: bolder; border-radius: 20px; font-size: 25px;}
-section { padding: 10px 10px; border: 2px solid black;  background-color: azure; border-radius: 15px; align-items: center;}
+main { 
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 15px;
+    }
+
+section { 
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: aqua;
+    margin-top: 42px;
+    padding: 0 10px;
+    box-shadow: 0px 0px 10px;
+    }
+
+body { 
+    padding: 0 30px;
+    }
+
+img {
+    display: block;
+    width: 100%;
+    margin: 7px 0;
+    }
+  
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+header, footer {
+    padding: 1rem 0;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    }
+
+footer { 
+    font-size: 1.2rem;
+    }
+  
+header h1 { 
+    font-size: 3rem;
+    }
+
+header h2 { 
+    font-size: 2rem;
+    }
+
+h3 { 
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+
+p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+section h2 {
+    padding: 10px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    margin-top: 15px;
+    border: 2px solid aqua;
+    border-radius: 15px;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+  } 
