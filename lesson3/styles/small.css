@@ -82,8 +82,10 @@ p {
   padding-top: 15px;
   max-width: 60%;
   margin: 0 auto;
-  background-color: var(--primary-color);
+  background-color: var(--paragraph-color-on-white);
   border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .persona img {
@@ -136,6 +138,7 @@ color: #FFFFFF;
 
 .primary {
   background-color: var(--primary-color);
+  color: #FFFFFF;
 }
 .secondary {
   background-color: var(--secondary-color);
