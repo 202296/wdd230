@@ -95,6 +95,11 @@ p {
 color: #FFFFFF;
 }
 
+.persona h4{
+  color: black;
+  font-weight: bolder;
+}
+
 .scenarios {
   max-width: 70%;
   margin: 0 auto;
