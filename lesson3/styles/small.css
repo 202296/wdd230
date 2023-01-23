@@ -95,11 +95,16 @@ p {
 }
 .persona h3{
 color: black;
+text-decoration: underline;
 }
 
 .persona h4{
   color: black;
   font-weight: bolder;
+}
+
+.demo {
+  list-style: none;
 }
 
 .scenarios {
