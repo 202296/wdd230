@@ -103,10 +103,6 @@ text-decoration: underline;
   font-weight: bolder;
 }
 
-.demo {
-  list-style: none;
-}
-
 .scenarios {
   max-width: 70%;
   margin: 0 auto;
