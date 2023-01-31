@@ -186,7 +186,7 @@ nav {
     margin-top: 10px;
 }
 
-#date p {
+#date h2 {
     margin: 5px 0;
     color: white;
     font-style: italic;
@@ -266,15 +266,18 @@ main {
 
   footer h3, footer h4 {
 	color: #000000;
+  font-weight: bolder;
   }
 
   .address-two h4 {
 	margin: 10px 0;
 	font-size: 1.2rem;
+  font-weight: bolder;
   }
 
   .address-one h4 {
 	font-size: 1.2rem;
+  font-weight: bolder;
   }
 
   .address-one h3 {
