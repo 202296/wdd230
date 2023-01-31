@@ -260,7 +260,7 @@ main {
 	flex-direction: column;
   }
 
-  footer p {
+  footer #info, footer #medium, footer #large {
 	font-size: 1em;
   }
 
