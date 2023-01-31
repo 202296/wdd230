@@ -126,7 +126,8 @@ nav ul li a {
     display: block;
     padding: 1.5rem 2vw;
     text-decoration: none;
-    color: white;
+    color: black;
+    font-weight: bolder;
 }
 nav ul li.active a {
     background-color: rgba(23, 29, 220, 0.2);
@@ -147,7 +148,7 @@ nav ul.open {
     display: flex;
     left: 0%;
     flex-direction: column;
-    background-color: black;
+    background-color: white;
     width: 100%;
     transition: 0.5s ;
     
