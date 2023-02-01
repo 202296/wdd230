@@ -292,13 +292,13 @@ main {
 	flex-wrap: wrap;
   }
 
-  header h1 {
+  header h2 {
 	font-size: .9rem;
 	color: black;
-	margin-top: 8px;
+	margin-top: 5px;
   }
 
-  .header h1 span {
+  .header h2 span {
 	font-size: 1.1rem;
   }
 
