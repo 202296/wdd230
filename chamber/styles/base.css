@@ -207,11 +207,6 @@ main {
   justify-content: center;
   text-align: center;
   }
-
-  /* .span_two {
-    cursor: pointer;
-  } */
-  
   main section, #spotlights {
 	background-color: white;
   padding: 5px 0;
@@ -362,7 +357,7 @@ main {
   .hero h1 {
     font-size: 2.4rem;
     font-weight: bold;
-    color: white;
+    color: black;
   }
 
   .weather img {
