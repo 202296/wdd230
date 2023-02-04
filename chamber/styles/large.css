@@ -1,4 +1,8 @@
 @media only screen and (min-width: 64em) {
+    main {
+      max-width: 1600px;
+      margin: 15px auto;
+    }
 
     header {
         grid-template-columns: 250px 1fr 200px;
@@ -15,7 +19,7 @@
     }
 
     nav ul li a {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: bolder;
     }
 
@@ -30,12 +34,9 @@
     }
     
     
-    #hamburguerBtn span:nth-child(1){display: none;}
-    #hamburguerBtn span:nth-child(2){display: none;}
-    
-    #hamburguerBtn.open span:nth-child(1){display: none;}
-    #hamburguerBtn.open span:nth-child(2){display: none;}
-    
+    #hamburguerBtn {
+      display: none;
+    }
     
     
     nav {
@@ -52,7 +53,7 @@
   main {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: repeat( 3, minmax(250px, auto) );
+    grid-template-rows: repeat( 3, minmax(320px, auto) );
     grid-template-areas: 
       "event   hero spotlights"
       "weather hero spotlights"
@@ -61,6 +62,7 @@
 
   .hero {
     grid-area: hero;
+    padding: 0;
   }
 
   .news {
@@ -73,6 +75,7 @@
 
   .weather {
     grid-area: weather;
+    margin: 0;
   }
 
   .join {
@@ -82,8 +85,15 @@
   #spotlights {
     grid-area: spotlights;
     flex-direction: column;
+    border: 1px solid gray;
+  }
+  .spot-two {
+    margin: 5px 0;
   }
 
+  #spotlights h4 {
+    font-size: .8rem;
+  }
   .spot-three {
     display: block;
   }
@@ -94,27 +104,73 @@
 
   #large {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
 
   header h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: black;
     margin-top: 15px;
     }
   
   .header h2 span {
-    font-size: 2rem;
+    font-size: 1.6rem;
     }
 
     .icon{
-      width: 45px;
-      height: 45px;
+      width: 35px;
+      height: 35px;
       margin: 0 2px;
       background-color: white;
       border-radius: 20px;
   }
+
+  #date h2 {
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4, .detail h4{
+  font-size: 1.2rem;
+}
+p{
+  font-size: 1.2rem;
+}
+
+#info {
+	font-size: 1.1em;
+  }
+
+  footer #large {
+	font-size: .9em;
+  }
+
+
+  .address-two h4, .address-two a {
+	font-size: 1.1rem;
+  }
+
+  .address-one h4 {
+	font-size: 1.1rem;
+  }
+
+  .address-one h3 {
+	font-size: 1.3rem;
+  }
+
+  .foot {
+    grid-template-columns: 12% 20% 22%;
+    justify-content: center;
+}
 
 }
     

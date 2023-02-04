@@ -8,6 +8,43 @@ const lastModifDate = document.createElement('h2');
 lastModifDate.innerHTML = `${day}, ${date} ${monthName} ${year}`
 selHead.appendChild(lastModifDate)
 
+const dt = d.getDay();
+const displayHead = document.getElementById('diamond');
+const displayPar = document.getElementById('message');
+const displayLink = document.getElementById('more');
+
+if(dt==1) {
+const cutting = document.getElementById('ribbon');
+const cut = document.createElement('span_two');
+cut.innerHTML = '❌';
+cutting.appendChild(cut);
+}
+const remove = document.querySelectorAll('span_two');
+for(let i=0; i<remove.length; i++){
+  remove[i].addEventListener('click', function() {
+    remove[i].parentElement.style.display = 'none';
+  })
+}
+
+
+switch(dt) {
+    case 1: displayHead.textContent = "🔹 The Diamond Shack";
+        break;
+}
+
+switch(dt) {
+    case 1: displayPar.textContent = "Join us for the grand opening of The Diamond Shack, Thursday at 1:00p.m."
+        break;
+}
+
+switch(dt) {
+    case 1: displayLink.textContent = "more info ..."
+        break;
+}
+
+
+
+
 
 
 function toggleMenu(){
