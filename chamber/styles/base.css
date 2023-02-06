@@ -126,9 +126,9 @@ nav ul li a {
     display: block;
     padding: 1.5rem 2vw;
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: #FFFFFF;
     font-size: 2.4rem;
+    font-style: italic;
 }
 nav ul li.active a {
     background-color: rgba(32, 39, 230, 0.2);
@@ -138,19 +138,27 @@ nav ul li.active a {
 nav ul {
     position: fixed;
     left: 100%;
-    top: 550px;
+    top: 12rem;
     flex-direction: column;
     width: 100%;
-    min-height: 100%;
     text-align: center;
     transition: 0.5s ;
+}
+
+.active {
+  color:  #1565C0;
+  border-bottom: 2px solid rgba(19, 156, 152, 0.5);
+}
+
+.active:hover {
+  color:  #000000;
 }
 
 nav ul.open {
     display: flex;
     left: 0%;
     flex-direction: column;
-    background-color: #1565C0;
+    background-color: rgba(0, 0, 0, 0.929);
     width: 100%;
     transition: 0.5s ;
 }
@@ -178,6 +186,7 @@ nav {
 	line-height: .3em;
 	font-size: 1em;
     border-radius: 35px;
+    
 }
 
 
@@ -323,24 +332,36 @@ main {
   }
 
   .hero {
-    position: relative;
-    box-shadow: none;
+    display: grid;
+    padding: 0;
   }
 
-  .hero h1 {
-    position: absolute;
-    top: 35px;
-    left: 5px;
-  }
+  .hero_image,
+.text_over {
+  grid-row: 1;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.text_over {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px;
+}
 
   .hero img {
     min-height: 100%;
   }
 
   .head_join {
-    position: absolute;
-    bottom: 37px;
-    right: 25px;
+
+
+    display: inline-block;
+  font-weight: bold;
+  
+  align-self: flex-end;
     border: 2px solid transparent;
     padding: 15px;
     border-radius: 15px;

@@ -15,7 +15,7 @@
         text-align: center;
         position: initial;
         justify-content: space-between;
-        background-color: rgba(46, 46, 222, .5);
+        background-color: rgba(0, 0, 0, 0.905);
     }
 
     nav ul li a {
@@ -27,7 +27,6 @@
         
         flex-wrap: nowrap;
     }
-    
 
     .social-media {
         order: 2;
