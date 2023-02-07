@@ -111,8 +111,8 @@ nav button {
 
 
   nav ul li a:hover {
-	color: #0885eb;
-	background-color: white;
+	color: white;
+	background-color: #1565C0;
   }
 
 
@@ -216,6 +216,7 @@ main {
   justify-content: center;
   text-align: center;
   }
+  
   main section, #spotlights {
 	background-color: white;
   padding: 5px 0;
