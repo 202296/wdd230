@@ -90,6 +90,12 @@
     grid-template-columns: 110px 1fr 1fr;
   }
 
+  
+  .spot-one, .spot-two, .spot-three{
+    padding: 15px;
+    margin-bottom: 0;
+  }
+
   .address-two h4 {
     margin: 0;
   }
