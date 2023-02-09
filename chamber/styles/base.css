@@ -81,7 +81,7 @@ main p {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .social-media {
@@ -159,7 +159,7 @@ nav ul.open {
     left: 0%;
     flex-direction: column;
     background-color: white;
-    width: 100%;
+    max-width: 100%;
     transition: 0.5s ;
 }
 
