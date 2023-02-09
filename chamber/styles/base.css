@@ -456,3 +456,7 @@ main {
   section, .join, .join-us, .head_join, #spotlights {
     box-shadow: 5px 5px 25px;
   }
+
+  #more {
+    color: rgb(240, 79, 79);
+  }
