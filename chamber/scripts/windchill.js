@@ -27,10 +27,13 @@ window.addEventListener('load', ()=>{
             const wndSpdMiles= wndSpdKm / 1.609
             tempValue.textContent= Math.round(feels_like - 273);
             const tempFah = (feels_like - 273.15) * 9/5 + 32
-
             const windShill = 35.74 + 0.6215*(tempFah) - 35.75 * (wndSpdMiles)**0.16 + 0.4275*(tempFah)*(wndSpdMiles)**0.16
 
-
+            if( tempFah <= 50 && wndSpdMiles > 3.0 ) {
+                wndChill.textContent= windShill.toFixed(2)
+                  } else {
+                windShill.textContent= 'N/A'
+            }
             
 
             if(id<300 && id>200) {
