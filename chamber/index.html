@@ -19,14 +19,31 @@
     <header>
       <div class="header">
         <div class="head">
-        <a href="#"> <img class="logo" src="images/logo.jpg" alt="the_logo of spirit of enterprise "></a> 
+        <a href="#">
+          <picture>
+            <source media="(min-width: 520px)" srcset="images/logo100.webp">
+          <img class="logo" src="images/logo50.webp" alt="the_logo of spirit of enterprise ">
+          </picture>
+        </a> 
           <h2> <span>The Spirit</span> <br> of Enterprise</h2>
           
         </div>
         <div class="social-media">
-      <a  href="https://www.facebook.com" target="_blank"><img class="icon" src="images/facebook.jpg" alt="facebook"></a>
+      <a  href="https://www.facebook.com" target="_blank">
+        <picture>
+          <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/facebook48.webp">
+          <source media="(min-width: 1024px)" srcset="images/facebook50.webp">
+        <img class="icon" src="images/facebook45.webp" alt="facebook">
+      </picture>
+      </a>
 
-        <a href="https://www.youtube.com" target="_blank"><img class="icon" src="images/youtube.png" alt="youtube"></a>
+        <a href="https://www.youtube.com" target="_blank">
+          <picture>
+            <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/youtube48.webp">
+            <source media="(min-width: 1024px)" srcset="images/youtube50.webp">
+          <img class="icon" src="images/youtube45.webp" alt="youtube">
+          </picture>
+        </a>
       </div>
          <nav>
             <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
@@ -44,7 +61,11 @@
 
      <main class="main">
       <section class="hero">
-        <img src="images/banner.jpeg" alt="Chamber banner" class="hero_image">
+        <picture class="hero_image">
+          <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/wdd230-org1023.webp" class="hero_image">
+          <source media="(min-width: 1024px)" srcset="images/wdd230-org1024.webp">
+        <img src="images/wdd230-org519.webp" alt="Chamber banner">
+      </picture>
         <div class="text_over">
       <h1>Welcome to The Spirit of Enterprise</h1>
       <div class="head_join">
@@ -63,15 +84,15 @@
       <section class="weather">
         <h2>Weather</h2>
         <div class="degree">
-        <img src="images/weather.jpg" alt="the weather">
-           <h2>33°C</h2>
+          <img class="temp-icon" src="images/weather120.webp" alt="the weather">
+        <p><span id="temp-value"></span><span id="temp-unit">&#176; C</span></p>
           </div>
 
            <div class="detail">
-           <h3>Partly Cloudy</h3>
+           <h3><span id="description">#</span></h3>
            <hr>
-           <h4>Wind Speed: <span> 2.5 km/h</span></h4>
-           <h4>Wind Chill: <span> N/A</span></h4> 
+           <p>Wind Speed: <span id="wind"></span></p>
+           <h4>Wind Chill: <span id="chill"></span></h4> 
         </div>
       </section>
       <section class="news">
@@ -88,7 +109,11 @@
       <div id="spotlights">
         <section class="spot-one">
         <h2>Thankful Transport</h2>
-        <img src="images/truck.jpg" alt="a truck">
+        <picture class="">
+          <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/truc215.webp">
+          <source media="(min-width: 1024px)" srcset="images/truc200.webp">
+        <img src="images/truc210.webp" alt="truck">
+      </picture>
         <h3>"We get it there for you!"</h3>
         <hr>
         <h4>hello@Thankfultransport.com</h4>
@@ -97,7 +122,11 @@
 
         <section class="spot-two">
         <h2>Code Primera</h2>
-        <img src="images/pencil.jpeg" alt="three pencil">
+        <picture class="">
+          <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/pencil215.webp">
+          <source media="(min-width: 1024px)" srcset="images/pencil200.webp">
+          <img src="images/pencil210.webp" alt="three pencil">
+      </picture>
         <h3>An after school coding instrutional program.</h3>
         <hr>
         <h4>contact@codeprimera.com</h4>
@@ -105,7 +134,7 @@
         </section>
         <section class="spot-three">
         <h2>Build A Treefort</h2>
-        <img src="images/tree.jpeg" alt="a Treefort">
+        <img src="images/tree200.webp" alt="a Treefort">
         <h3>Over 1000 plans!</h3>
         <hr>
         <h4>builda@Treefort.com</h4>
@@ -115,7 +144,10 @@
     </main>
   <footer class="footer">
     <div class="foot">
-    <img class="foot-logo" src="images/logo.jpg" alt="my_logo">
+      <picture>
+        <source media="(min-width: 520px)" srcset="images/logo150.webp">
+    <img class="foot-logo" src="images/logo100.webp" alt="my_logo">
+      </picture>
     <div class="address-one">
       <h3>The Spirit of Enterprise</h3>
       <h4>05 Place De La Republique</h4>
@@ -135,7 +167,8 @@
     </div> 
   </footer>
   </div>
-  <script src="scripts/scripts.js"></script>  
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/windchill.js"></script>  
 </body>
 </html>
 
