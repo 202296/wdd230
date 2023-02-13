@@ -11,6 +11,7 @@ window.addEventListener('load', ()=>{
     navigator.geolocation.getCurrentPosition((position)=>{
         long = position.coords.longitude;
         lat = position.coords.latitude;
+
         // const proxy = 'https://cors-anywhere.herokuapp.com/';
         // const api = `${proxy}https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=a1dab4b3dd0e8924d8e02ff045956dac`
 
@@ -19,20 +20,18 @@ window.addEventListener('load', ()=>{
             return Response.json();
         })
         .then (data =>{
-            console.log(data)
             const{feels_like}= data.main;
-            const id = data['weather']['0'] ;
+            const id = data['weather']['0']['id'] ;
             const descrip= data['weather']['0']['description'] ;
             const wndSpdKm= data['wind']['speed'] ;
             const wndSpdMiles= wndSpdKm / 1.609
-            tempValue.textContent= Math.round(feels_like - 273);
             const tempFah = (feels_like - 273.15) * 9/5 + 32
             const windShill = 35.74 + 0.6215*(tempFah) - 35.75 * (wndSpdMiles)**0.16 + 0.4275*(tempFah)*(wndSpdMiles)**0.16
 
             if( tempFah <= 50 && wndSpdMiles > 3.0 ) {
                 wndChill.textContent= windShill.toFixed(2)
                   } else {
-                windShill.textContent= 'N/A'
+                wndChill.textContent= 'N/A'
             }
             
 
@@ -52,12 +51,12 @@ window.addEventListener('load', ()=>{
                 tempIcon.src='images/clouds.webp'
             }
             else if(id == 800) {
-                tempIcon.src='images/clouds-and-sun.webp'
+                tempIcon.src="images/clouds_and_sun.webp"
             }
 
             description.textContent = descrip
             wind.textContent = `${wndSpdKm} km/h`
-            wndChill.textContent= windShill.toFixed(2)
+            tempValue.textContent= Math.round(feels_like - 273);
         });
     });
 });

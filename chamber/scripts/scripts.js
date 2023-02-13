@@ -29,23 +29,10 @@ for(let i=0; i<remove.length; i++){
 
 switch(dt) {
     case 1: displayHead.textContent = "🔹 The Diamond Shack";
+            displayPar.textContent = "Join us for the grand opening of The Diamond Shack, Thursday at 1:00p.m.";
+            displayLink.textContent = "more info ...";
         break;
 }
-
-switch(dt) {
-    case 1: displayPar.textContent = "Join us for the grand opening of The Diamond Shack, Thursday at 1:00p.m."
-        break;
-}
-
-switch(dt) {
-    case 1: displayLink.textContent = "more info ..."
-        break;
-}
-
-
-
-
-
 
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("open");
@@ -54,8 +41,6 @@ function toggleMenu(){
 }
 const x = document.getElementById("hamburguerBtn");
 x.onclick = toggleMenu;
-
-
 
 const fullYear = new Date().getFullYear();
 const sumb = document.getElementById('info');
