@@ -467,3 +467,7 @@ main {
     margin: 0 0 0 20px;
     color: rgb(36, 0, 0);
   }
+
+  span_two {
+    color: #000000;
+  }
