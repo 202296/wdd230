@@ -10,11 +10,11 @@ selHead.appendChild(lastModifDate)
 
 const dt = d.getDay();
 const displayHead = document.getElementById('diamond');
-const displayPar = document.getElementById('message');
-const displayLink = document.getElementById('more');
+const displayPar = document.getElementById('message1');
+const displayLink = document.getElementById('more1');
 
-if(dt==1) {
-const cutting = document.getElementById('ribbon');
+if(dt==2) {
+const cutting = document.getElementById('first-ribbon');
 const cut = document.createElement('span_two');
 cut.innerHTML = '❌';
 cutting.appendChild(cut);
@@ -28,9 +28,9 @@ for(let i=0; i<remove.length; i++){
 
 
 switch(dt) {
-    case 1: displayHead.textContent = "🔹 The Diamond Shack";
-            displayPar.textContent = "Join us for the grand opening of The Diamond Shack, Thursday at 1:00p.m.";
-            displayLink.textContent = "more info ...";
+    case 2: displayHead
+            displayPar
+            displayLink
         break;
 }
 

@@ -171,5 +171,13 @@ p{
     justify-content: center;
 }
 
+#diamond {
+  font-size: 1.4rem;
+}
+
+#message1 {
+  margin: 2px 0 0 0;
+}
+
 }
     

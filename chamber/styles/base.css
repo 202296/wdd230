@@ -400,16 +400,11 @@ main {
     margin-top: 8px;
   }
 
-  #ribbon a {
-    text-decoration: none;
-    font-size: 1.4rem;
-  }
-
   #message {
     margin-top: 20px;
   }
 
-  #diamond {
+  #star {
     margin: 25px 0;
   }
 
@@ -453,5 +448,22 @@ main {
   }
 
   #more {
+    color: rgb(36, 0, 0);
+  }
+
+  #first-ribbon {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 25px;
+    background-color: rgba(158, 158, 244, 0.5);
+  }
+
+  #message1 {
+    font-size: 1.3rem;
+  }
+
+  #more1 {
+    margin: 0 0 0 20px;
     color: rgb(36, 0, 0);
   }
