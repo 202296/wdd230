@@ -13,7 +13,7 @@ const displayHead = document.getElementById('diamond');
 const displayPar = document.getElementById('message1');
 const displayLink = document.getElementById('more1');
 
-if(dt==1) {
+if(dt==2) {
 const cutting = document.getElementById('first-ribbon');
 const cut = document.createElement('span_two');
 cut.innerHTML = '❌';
@@ -27,7 +27,7 @@ for(let i=0; i<remove.length; i++){
 }
 
 
-switch(dt) {
+switch(dt==2) {
     case 1: displayHead
             displayPar
             displayLink
