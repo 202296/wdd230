@@ -574,7 +574,6 @@ table, th, td {
   border: 1px solid black;
   text-align: center;
   padding: 10px;
-  font-size: 1.4rem;
 }
 
 .presentation{
@@ -608,6 +607,10 @@ td {
 .explain {
   font-family: var(--paragraph-font);
   margin: 10px 0;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .demogra {
