@@ -1,5 +1,5 @@
 @media only screen and (min-width: 32.5em) {
-    main {
+    .main {
         display: grid;
         grid-template-columns: 3fr 2fr;
       }
@@ -171,6 +171,10 @@ nav li {
 
       .foot-info{
         font-size: 1.1rem;
+      }
+
+      .image:hover {
+        box-shadow: 5px 5px 25px;
       }
 }   
 

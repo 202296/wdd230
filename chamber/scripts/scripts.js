@@ -5,34 +5,20 @@ const date = d.getDate();
 const year = d.getFullYear();
 const selHead = document.getElementById('date');
 const lastModifDate = document.createElement('h2');
+
+
 lastModifDate.innerHTML = `${day}, ${date} ${monthName} ${year}`
 selHead.appendChild(lastModifDate)
 
-const dt = d.getDay();
-const displayHead = document.getElementById('diamond');
-const displayPar = document.getElementById('message1');
-const displayLink = document.getElementById('more1');
 
-if(dt==2) {
-const cutting = document.getElementById('first-ribbon');
-const cut = document.createElement('span_two');
-cut.innerHTML = '❌';
-cutting.appendChild(cut);
-}
-const remove = document.querySelectorAll('span_two');
+const mdal = document.getElementById('banner');
+const remove = document.querySelectorAll('.close-button');
 for(let i=0; i<remove.length; i++){
   remove[i].addEventListener('click', function() {
     remove[i].parentElement.style.display = 'none';
   })
 }
 
-
-switch(dt==2) {
-    case 1: displayHead
-            displayPar
-            displayLink
-        break;
-}
 
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("open");
@@ -41,6 +27,7 @@ function toggleMenu(){
 }
 const x = document.getElementById("hamburguerBtn");
 x.onclick = toggleMenu;
+
 
 const fullYear = new Date().getFullYear();
 const sumb = document.getElementById('info');
@@ -57,3 +44,19 @@ parag.textContent = `Last Modification: ${document.lastModified}`;
 sumbo.appendChild(parag)
 const sumbol = document.getElementById('large');
 sumbol.innerHTML = `&copy; ${fullYear} Spirit of Enterprise | Koko Mouhamed Jean Patrick | WDD 230 Project | Last Modification: ${document.lastModified}`;
+
+
+
+
+const weekDay = d.getDay();
+
+if ( weekDay == 1) {
+
+  mdal.style.display = 'flex';
+
+} else {
+
+  mdal.style.display = 'none';
+
+}
+

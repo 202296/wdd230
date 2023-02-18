@@ -80,7 +80,7 @@ main p {
 	margin: 0 5px;   
 }
 
-img {
+.img {
     width: 100%;
     height: 100%;
 }
@@ -207,18 +207,18 @@ nav {
 }
 
 
-main {
+.main {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: repeat( 5, minmax(250px, auto) );
 	gap: 10px;
-	margin: 20px 0;
   font-size: 1.1rem;
   justify-content: center;
   text-align: center;
+  margin: 15px auto;
   }
   
-  main section, #spotlights {
+  .main section, #spotlights {
 	background-color: white;
   padding: 5px 0;
 	border: 1px solid transparent;
@@ -443,35 +443,174 @@ main {
     font-size: 1.9rem;
   }
 
-  section, .join, .join-us, .head_join, #spotlights {
+  section, .join, .join-us, .head_join, #spotlights, .banner {
     box-shadow: 5px 5px 25px;
   }
 
-  #more {
-    color: rgb(36, 0, 0);
-  }
 
-  #first-ribbon {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    padding: 25px;
-    background-color: rgba(158, 158, 244, 0.5);
-  }
+.banner {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 0;
+  background-color: #90CAF9;
+  border-radius: 10px;
+}
 
-  #message1 {
-    font-size: 1.3rem;
-  }
+.banner .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 10px;
+}
 
-  #more1 {
-    margin: 0 0 0 20px;
-    color: rgb(36, 0, 0);
-  }
+.banner .banner-body {
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin: 0 0 0 15px;
+  flex: 1;
+  text-align: center;
+}
 
-  span_two {
-    color: #000000;
-  }
+#more a {
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: rgb(240, 74, 74);
+}
 
-  /* #cross {
-    color: black;
-  } */
+.image {
+border-radius: 15px;
+max-width: 100%;
+}
+
+
+figure {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+align-items: center;
+margin-bottom: 50px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  font-family: var(--paragraph-font);
+  padding: 0 20px;
+}
+
+.city {
+  margin-top: 50px;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  max-width: 50%;
+  padding: 25px;
+}
+
+.modal::backdrop {
+  background-color: #1565C0;
+  opacity: .7;
+}
+
+.open-button, .close-bton {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px;
+}
+.open-button{
+  margin: 10px;
+}
+.close-bton {
+  margin: 10px 0 0 20px;
+}
+
+
+.modal p {
+	margin: 10px;
+  font-size: 1.1rem;
+  font-family: var(--paragraph-font);
+}
+
+.modal h1 {
+  font-size: 1.5rem;
+  font-family: var(--heading-font);
+}
+
+
+.label {
+	font-weight: 700;
+  font-size: 1.3rem;
+}
+
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+#today {
+	color: tomato;
+}
+
+.photo {
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.4rem;
+}
+
+.presentation{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+tfoot td {
+  text-align: left;
+}
+
+td {
+  color: #000000;
+}
+
+.presentation h1, .presentation h2 {
+  font-family: var(--heading-font);
+  text-align: center;
+  margin: 15px;
+}
+
+.presentation h1 {
+  font-size: 1.9rem;
+}
+.presentation h2{
+  font-size: 1.7rem;
+}
+
+.explain {
+  font-family: var(--paragraph-font);
+  margin: 10px 0;
+}
+
+.demogra {
+  text-align: center;
+  font-size: 2.4rem;
+}
