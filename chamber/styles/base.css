@@ -80,11 +80,6 @@ main p {
 	margin: 0 5px;   
 }
 
-.img {
-    width: 100%;
-    height: 100%;
-}
-
 .social-media {
     grid-column: 2/3;
     align-self: center;
@@ -187,6 +182,7 @@ nav {
 	line-height: .3em;
 	font-size: 1em;
     border-radius: 35px;
+    z-index: 10;
     
 }
 
@@ -220,8 +216,6 @@ nav {
   
   .main section, #spotlights {
 	background-color: white;
-  padding: 5px 0;
-	border: 1px solid transparent;
   }
   
   .join, .spot-three {
@@ -338,41 +332,56 @@ nav {
     padding: 0;
   }
 
-  .hero_image,
-.text_over {
-  grid-row: 1;
-  grid-column: 1;
-}
-
-.text_over {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 40px;
-}
-
-  .head_join {
-    display: inline-block;
-    font-weight: bold;
-    align-self: flex-end;
-    border: 2px solid transparent;
-    padding: 15px;
-    border-radius: 15px;
-    background-color: #1565C0;
-  }
-
-  .head_join a {
-    text-decoration: none;
+  .hero {
+    text-align: center;
     color: white;
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
+    position: relative;
+    overflow: hidden;
+}
 
-  .hero h1 {
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: black;
-  }
+.hero h1 {
+  color: black;
+  font-size: 1.8rem;
+  font-family: var(--heading-font);
+  text-shadow: 4px 4px 10px rgb(50, 51, 54);
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head_join {
+  padding: 15px;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  background-color: #1565C0;
+  box-shadow: 5px 5px 25px;;
+}
+
+.hero {
+  box-shadow: 5px 5px 25px;
+}
+
+.head_join a {
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
   .weather img {
     width: 110px;
@@ -443,7 +452,7 @@ nav {
     font-size: 1.9rem;
   }
 
-  section, .join, .join-us, .head_join, #spotlights, .banner {
+  section, .join, .join-us, #spotlights, .banner {
     box-shadow: 5px 5px 25px;
   }
 

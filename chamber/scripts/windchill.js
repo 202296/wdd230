@@ -5,20 +5,11 @@ const description = document.getElementById('description');
 const wndChill = document.getElementById('chill');
 
 
-window.addEventListener('load', ()=>{
-    let long;
-    let lat;
-    navigator.geolocation.getCurrentPosition((position)=>{
-        long = position.coords.longitude;
-        lat = position.coords.latitude;
 
-        // const proxy = 'https://cors-anywhere.herokuapp.com/';
-        // const api = `${proxy}https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=a1dab4b3dd0e8924d8e02ff045956dac`
 
-        const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=a1dab4b3dd0e8924d8e02ff045956dac`
-        fetch(api).then((Response)=>{
-            return Response.json();
-        })
+const api = `https://api.openweathermap.org/data/2.5/weather?q=Abidjan&appid=a1dab4b3dd0e8924d8e02ff045956dac`
+        fetch(api)
+        .then(Response => Response.json())
         .then (data =>{
             const{feels_like}= data.main;
             const id = data['weather']['0']['id'] ;
@@ -34,7 +25,6 @@ window.addEventListener('load', ()=>{
                 wndChill.textContent= 'N/A'
             }
             
-
             if(id<300 && id>200) {
                 tempIcon.src='images/thunderstorm.webp'
             }
@@ -58,6 +48,3 @@ window.addEventListener('load', ()=>{
             wind.textContent = `${wndSpdKm} km/h`
             tempValue.textContent= Math.round(feels_like - 273);
         });
-    });
-});
-

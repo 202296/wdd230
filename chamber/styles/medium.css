@@ -11,6 +11,14 @@
       .hero {
         grid-column: span 2;
       }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .head_join a {
+        font-size: 1.7rem;
+      }
     
       .news {
         grid-column: span 2;
