@@ -55,9 +55,11 @@ th {
     font-family: 'Times New Roman', Times, serif;
     
 }
-  .foot, .none {
-    border: 0;
-  }
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-size: 18px;
+}
 
 .none {
     background-color: black;
@@ -94,7 +96,7 @@ th {
         font-size: 2.5rem;
     }
 
-    .foot {
+    caption {
         font-size: 25px;
     }
 }
@@ -102,10 +104,10 @@ th {
 
 
 
-@media only screen and (min-width: 1640px){
+@media only screen and (min-width: 1500px){
     table {
-        width: 192ch;
-        top: 290px;
+        width: 162ch;
+        top: 212px;
         left: 25px;
     }
 
@@ -115,8 +117,8 @@ th {
     }
 
     .build {
-    width: 186ch;
-    height: 35ch;
+    width: 156ch;
+    height: 25ch;
     padding: 24px;
     }
 
@@ -129,7 +131,7 @@ th {
         font-size: 4rem;
     }
 
-    .foot {
+    caption {
         font-size: 45px;
     }
 }
