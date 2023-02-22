@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="statistical and demographic data about the city of the spirit of enterprise">
+    <meta name="author" content="Mouhamed Koko">
+    <link rel="shortcut icon" href="/wdd230/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>The Dicover Page</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="header">
+              <div class="head">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 520px)" srcset="images/logo100.webp">
+                <img class="logo" src="images/logo50.webp" alt="the_logo of spirit of enterprise ">
+                </picture>
+              </a> 
+                <h2> <span>The Spirit <br></span>  of Enterprise</h2>
+                
+              </div>
+              <div class="social-media">
+            <a  href="https://www.facebook.com" target="_blank">
+              <picture>
+                <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/facebook48.webp">
+                <source media="(min-width: 1024px)" srcset="images/facebook50.webp">
+              <img class="icon" src="images/facebook45.webp" alt="facebook">
+            </picture>
+            </a>
+      
+              <a href="https://www.youtube.com" target="_blank">
+                <picture>
+                  <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/youtube48.webp">
+                  <source media="(min-width: 1024px)" srcset="images/youtube50.webp">
+                <img class="icon" src="images/youtube45.webp" alt="youtube">
+                </picture>
+              </a>
+            </div>
+               <nav>
+                  <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+                  <ul id="primaryNav">
+                      <li><a href="index.html" class="active">Home</a></li>
+                      <li><a href="discover.html">Discover</a></li>
+                      <li><a href="directory.html">Directory</a></li>
+                      <li><a href="join.html">Join</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+            </div>
+          <div id="date"></div>
+        </header>
+        <main class="form">
+
+            <h1>Join The Spirit of Enterprise</h1>
+    <form action="thankyou.html" method="get">
+        <fieldset >
+            <legend>Application Information</legend>
+           <label class="top" > First Name* <input type="text" name="fname" id="fname" required></label>
+           <label class="top" > Last Name* <input type="text" name="lname" id="lname" required></label>
+            <label class="top"> Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+           <label class="top"> Phone <input type="tel" name="phone" required></label>
+        </fieldset>
+           <fieldset>
+            <legend>Business Information</legend>
+           <label class="top" id="top"> Job Title* <input type="text" name="job" pattern="^[a-zA-Z\s-]{7,}$"></label>
+           <label class="top"> Business Name<input type="text" name="company" required></label>
+           <label class="top"> Business Description<textarea name="description" rows="4" cols="50"></textarea></label>
+           <div>Membership Levels</div>
+           <label class="sbs"><input type="radio" name="audience" value="Non Profit">Non Profit</label>
+            <label class="sbs"><input type="radio" name="audience" value="Bronze">Bronze</label>
+            <label class="sbs"><input type="radio" name="audience" value="Silver">Silver</label>
+            <label class="sbs"><input type="radio" name="audience" value="Gold">Gold</label>
+        </fieldset>
+            
+            
+        <input type="submit" value="Join Chamber" class="submiBtn">
+
+    </form>
+             <div class="visit"> <b> Last Visit:</b><span class="today"> </span></div>
+        </main>
+        <footer class="footer">
+            <div class="foot">
+              <picture>
+                <source media="(min-width: 520px)" srcset="images/logo150.webp">
+            <img class="foot-logo" src="images/logo100.webp" alt="my_logo">
+              </picture>
+            <div class="address-one">
+              <h3>The Spirit of Enterprise</h3>
+              <h4>05 Place De La Republique</h4>
+              <h4>Abidjan, Ivory Cost 1996</h4>
+            </div>
+            <div class="address-two">
+              <h4> 📧 info@spiritofEnt.org</h4>
+              <h4> 📞 (+225) 0548-4897</h4>
+              <a href="https://maps.app.goo.gl/UXqpLMBrB191CCte9?g_st=iwb" target="_blank"> 📍 Location Map</a>
+            </div>
+            </div>
+            <div class="foot-info">
+            <hr>
+              <h4 id="info">#</h4>
+              <h4 id="medium">#</h4>
+              <h4 id="large">#</h4>
+            </div> 
+          </footer>
+        </div>
+    <script src="scripts/userTrack.js"></script> 
+    <script src="scripts/scripts.js"></script>
+    </body>
+    
+    </html>

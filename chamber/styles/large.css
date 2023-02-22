@@ -186,5 +186,9 @@ p{
   margin: 2px 0 0 0;
 }
 
+form label.sbs {
+  padding: .4rem 0;
+}
+
 }
     

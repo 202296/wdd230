@@ -184,6 +184,28 @@ nav li {
       .image:hover {
         box-shadow: 5px 5px 25px;
       }
+
+      .form h1 {
+        font-size: 2.2rem;
+      }
+
+      input[type="radio"] {
+        width: 16px;
+        height: 16px;
+      }
+
+      form label.top, form div {
+        font-size: 1.2rem;
+      }
+
+      form legend {
+        font-size: 1.5rem;
+      }
+
+      form input.submiBtn {
+        font-size: 1.3rem;
+        margin: 0 0 2rem ;
+      }
 }   
 
   
