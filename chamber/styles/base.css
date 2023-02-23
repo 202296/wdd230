@@ -648,6 +648,8 @@ form legend {
   margin: 0 1.3rem;
   padding: 0 .5rem;
   font-size: 1.2rem;
+  font-family: var(--heading-font);
+  font-weight: bold;
 }
 
 form label.top, form div {
@@ -655,6 +657,7 @@ form label.top, form div {
   padding-top: 1rem;
   color: #13539c;
   font-size: 1rem;
+  font-family: var(--paragraph-font);
 }
 
 form label.top input, form label.top select, textarea {
@@ -695,8 +698,8 @@ form label.top input:required {
 }
 
 form label.top input:required:hover {
-  background-color: #3389ec;
-  color: #FFFFFF;
+  box-shadow: 5px 5px 25px skyblue;
+  
 }
 
 form label.top input:required:valid {
