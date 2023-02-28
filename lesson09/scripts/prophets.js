@@ -53,7 +53,7 @@ async function getProphetData() {
 
       else {
         let year_difference = today.getFullYear() - bdate.getFullYear();
-        let age = year_difference;
+        let age = year_difference - 1;
 
       ages.innerHTML = `<span>Age:</span> ${age}`
       }
