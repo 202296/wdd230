@@ -3,13 +3,9 @@
 
 body {
   background-color: #000;
+  padding: 10px;
 }
 
-header,
-main,
-footer {
-  margin: 1rem;
-}
 
 h1, h2, button {
     font-family: Roboto, sans-serif;
@@ -17,8 +13,7 @@ h1, h2, button {
 
 h1 {
   color: #fff;
-  font-size: 3rem;
-  margin-left: 15px;
+  font-size: 2.3rem;
 }
 
 h2 {
@@ -49,14 +44,13 @@ span {
 
 
 main {
-  margin-left: 2rem;
   background-color: white;
-  padding: 25px;
+  padding: 15px;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 section {
@@ -79,10 +73,10 @@ img {
 }
 
 .decade {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     background-color: #e1dfdf;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 5px;
 }
