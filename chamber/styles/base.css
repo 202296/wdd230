@@ -717,3 +717,29 @@ input[type="radio"] {
   margin: 25px;
   text-align: center;
 }
+
+#complog {
+  height: 75px;
+	max-width: 100%;
+}
+
+.cardir {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: center;
+}
+
+.cardir article {
+	flex-direction: column;
+	text-align: center;
+}
+
+article {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

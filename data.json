@@ -23,7 +23,7 @@
       {
         "name": "SOTRA",
         "address": "Gare sud, Av. Faidherbe, Abidjan",
-        "phonenum": "27 21 7 57100",
+        "phonenum": "",
         "membershiplevel": "Golds",
         "founded": "1960",
         "rate": "3.7",
@@ -62,7 +62,7 @@
       },
       {
         "name": "SIFCA",
-        "address": "8X4H+JG6, Bd du Port, Abidjan",
+        "address": "JG6, Bd du Port, Abidjan",
         "phonenum": " 27 21 7 57575",
         "membershiplevel": "Corporate",
         "founded": "1964",
@@ -82,7 +82,7 @@
       },
       {
         "name": "PROSUMA",
-        "address": "8X4H+42W, Bd du Port, Abidjan",
+        "address": "42W, Bd du Port, Abidjan",
         "phonenum": " 88366652",
         "membershiplevel": "Golds",
         "founded": " 1966",
@@ -92,7 +92,7 @@
       },
       {
         "name": "MTN",
-        "address": "8X9P+6C8, Rue du Commerce, Abidjan",
+        "address": "6C8, Rue du Commerce, Abidjan",
         "phonenum": "05 46 46 2499",
         "membershiplevel": "Golds",
         "founded": "1994",
