@@ -2,93 +2,103 @@
     "companies": [
       {
         "name": "SODECI",
-        "address": "",
-        "phonenum": "",
-        "membershiplevel": "",
-        "founded": "",
-        "websiteurl": "",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "address": "1 Av. Christiani, Abidjan",
+        "phonenum": "21233000",
+        "membershiplevel": "Platinium",
+        "founded": "1959",
+        "rate": "3.4",
+        "websiteurl": "https://www.sodeci.ci/",
+        "imageurl": "https://www.sodeci.ci/public/assets/images/logo.png"
       },
       {
         "name": "Bollore",
-        "address": "",
-        "phonenum": "",
-        "membershiplevel": "",
-        "founded": "",
-        "websiteurl": "",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "address": "1 Av. Christiani, Abidjan",
+        "phonenum": "21220420",
+        "membershiplevel": "Platinium",
+        "founded": "1822",
+        "rate": "4.1",
+        "websiteurl": "https://www.bollore.com/fr/",
+        "imageurl": "https://www.bollore.com/bollo-content/themes/bollore/img/logo.svg"
       },
       {
         "name": "SOTRA",
-        "address": "",
+        "address": "Gare sud, Av. Faidherbe, Abidjan",
         "phonenum": "",
-        "membershiplevel": "",
-        "founded": "",
-        "websiteurl": "",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "membershiplevel": "Golds",
+        "founded": "1960",
+        "rate": "3.7",
+        "websiteurl": "http://www.sotra.ci/www/s/",
+        "imageurl": "https://storage.googleapis.com/zoomzoomzenlive.appspot.com/network_sotra.png"
       },
       {
         "name": "SNEDAI",
-        "address": "",
-        "phonenum": "",
-        "membershiplevel": "",
-        "founded": "",
-        "websiteurl": "",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "address": "2 Trays Vallons, Abidjan",
+        "phonenum": "+225 27 22 510 808",
+        "membershiplevel": "Golds",
+        "founded": "2007",
+        "rate": "3.3",
+        "websiteurl": "https://snedai.com/",
+        "imageurl": "https://snedai.com/wp-content/uploads/2017/04/logo-web-snedai-groupe.jpg"
       },
       {
         "name": "CIE",
-        "address": "",
-        "phonenum": "",
-        "membershiplevel": "",
-        "founded": "",
-        "websiteurl": "",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "address": "1 Av. Christiani, Abidjan",
+        "phonenum": "27 21 2 30250",
+        "membershiplevel": "Platinium",
+        "founded": "1990",
+        "rate": "4.1",
+        "websiteurl": "https://www.cie.ci/",
+        "imageurl": "https://www.cie.ci/public/images/logo.png"
       },
       {
         "name": "Nestle",
-        "address": "",
-        "phonenum": "",
-        "membershiplevel": "",
-        "founded": "",
-        "websiteurl": "",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "address": "9WF7+76W, Abidjan",
+        "phonenum": "23467070",
+        "membershiplevel": "Platinium",
+        "founded": "1866",
+        "rate": "5",
+        "websiteurl": "https://www.nestle.com/",
+        "imageurl": "https://www.nestle.com/themes/custom/da_vinci_code/logo.png"
       },
       {
         "name": "SIFCA",
-        "address": "",
-        "phonenum": "",
-        "membershiplevel": "",
-        "founded": "",
-        "websiteurl": "",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "address": "8X4H+JG6, Bd du Port, Abidjan",
+        "phonenum": " 27 21 7 57575",
+        "membershiplevel": "Corporate",
+        "founded": "1964",
+        "rate": "4.1",
+        "websiteurl": "https://www.groupesifca.com/",
+        "imageurl": "https://www.groupesifca.com/wp-content/uploads/2021/04/Logotype_Sifca-1.png"
       },
       {
         "name": "CFAO",
-        "address": "",
-        "phonenum": "",
-        "membershiplevel": "",
-        "founded": "",
-        "websiteurl": "",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "address": "Rue Pasteur, Abidjan",
+        "phonenum": " 27 21 3 42300",
+        "membershiplevel": "Corporate",
+        "founded": "1845",
+        "rate": "4.0",
+        "websiteurl": "https://www.cfaogroup.com/",
+        "imageurl": "https://www.cfaogroup.com/wp-content/uploads/2020/09/logo-cfaogroup.svg"
       },
       {
         "name": "PROSUMA",
-        "address": "",
-        "phonenum": "",
-        "membershiplevel": "",
-        "founded": "",
-        "websiteurl": "",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "address": "8X4H+42W, Bd du Port, Abidjan",
+        "phonenum": " 88366652",
+        "membershiplevel": "Golds",
+        "founded": " 1966",
+        "rate": "3.7",
+        "websiteurl": "https://groupeprosuma.com/",
+        "imageurl": "https://groupeprosuma.com/wp-content/themes/prosuma-press/_/img/logo_header.png"
       },
       {
         "name": "MTN",
-        "address": "",
-        "phonenum": "",
-        "membershiplevel": "",
-        "founded": "",
-        "websiteurl": "",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+        "address": "8X9P+6C8, Rue du Commerce, Abidjan",
+        "phonenum": "05 46 46 2499",
+        "membershiplevel": "Golds",
+        "founded": "1994",
+        "rate": "4.0",
+        "websiteurl": "https://www.mtn.ci/",
+        "imageurl": "https://www.mtn.ci/wp-content/themes/mtn-theme-210/images/mtn-logo-nav-.svg"
       }
       
     ]
