@@ -141,7 +141,7 @@ nav ul {
 }
 
 .active {
-  color:  #1565C0;
+  color:  #044289;
   border-bottom: 2px solid rgba(19, 156, 152, 0.5);
 }
 
@@ -842,4 +842,9 @@ h1 {
 
 .list article .details {
   display: block;
+}
+
+
+.rembut {
+  display: none;
 }
