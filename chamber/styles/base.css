@@ -578,10 +578,18 @@ figcaption {
   margin: 0 auto;
 }
 
-table, th, td {
-  border: 1px solid black;
+table,td, th {
+  border: 1px solid rgb(199, 197, 197);
   text-align: center;
   padding: 10px;
+  border-collapse: collapse;
+}
+
+td:nth-child(even) {
+  background-color: #eef1f4;
+}
+th {
+  background-color: #42A5F5;
 }
 
 .presentation{
@@ -628,12 +636,14 @@ td {
 
 
 
-.form {
-  padding: 0 2%;
-  min-height: 20rem;
-}
+
 
 /* ----------- FORM ---------------*/
+.form {
+  padding: 0 2%;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
 
 form fieldset {
   margin: 2rem 0;
@@ -680,7 +690,16 @@ form label.sbs {
   color: #555;
 }
 
-form input.submiBtn {
+#membtble {
+  display: none;
+}
+
+.form {
+  display: grid;
+  flex-flow: column wrap;
+}
+
+#joinform input.submiBtn {
   border: none;
   background-color: #1565C0;
   color: white;
@@ -690,6 +709,14 @@ form input.submiBtn {
   width: 96%;
   max-width: 20rem;
   font-size: 1rem;
+}
+
+/* #joinform {
+  max-width: 70%;
+} */
+
+#smalmembtble {
+margin-top: 10%;
 }
 
 form label.top input:required {
@@ -715,6 +742,12 @@ input[type="radio"] {
   font-size: 1.4rem;
   margin: 25px;
   text-align: center;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-size: 18px;
 }
 
 .direct {

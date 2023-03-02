@@ -190,6 +190,25 @@ form label.sbs {
   padding: .4rem 0;
 }
 
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+#membtble {
+  display: block;
+}
+
+#membtble {
+  margin: 8% 0 0 8%;
+}
+
+#smalmembtble {
+  display: none;
+}
+
 .list article {
   display: grid;
   grid-template-columns: 1fr 1.3fr 1.1fr .7fr .9fr 1.4fr;
