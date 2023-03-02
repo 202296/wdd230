@@ -190,5 +190,15 @@ form label.sbs {
   padding: .4rem 0;
 }
 
+.list article {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1.1fr .7fr .9fr 1.4fr;
+  
+}
+
+.list article .detail, .list article .details {
+  display: block;
+}
+
 }
     

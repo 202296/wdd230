@@ -123,13 +123,12 @@ nav ul li a {
   padding: 1.5rem 2vw;
   text-decoration: none;
   color: #000000;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-style: italic;
 }
 nav ul li.active a {
     background-color: rgba(32, 39, 230, 0.2);
-}
- 
+} 
 
 nav ul {
     position: fixed;
@@ -718,6 +717,10 @@ input[type="radio"] {
   text-align: center;
 }
 
+.direct {
+  margin: 0 auto;
+}
+
 #complog {
   height: 75px;
 	max-width: 100%;
@@ -726,7 +729,6 @@ input[type="radio"] {
 .cardir {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	align-items: center;
 }
 
 .cardir article {
@@ -742,4 +744,69 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #bbb;
+	text-align: center;
+}
+
+.menu button {
+	padding: .7rem;
+  margin: 10px;
+	font-weight: 700;
+}
+
+
+.list article img {
+	display: none; 
+}
+
+.cardir article .detail, .cardir article .details {
+  display: none;
+}
+
+.cardir article .details {
+  display: block;
+}
+
+.cardir article .detail, .cardir article .details {
+  display: none;
+}
+
+.list article:nth-child(even) {
+	background-color: #bed;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+}
+
+.list article {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  max-width: 100%;
+  
+}
+h1 {
+  text-align: center;
+}
+.cardir h3 {
+  font-size: 1rem;
+}
+
+.list h2 {
+  font-size: 1.2rem;
+}
+
+
+.list article .details {
+  display: block;
 }

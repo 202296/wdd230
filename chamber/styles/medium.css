@@ -206,6 +206,12 @@ nav li {
         font-size: 1.3rem;
         margin: 0 0 2rem ;
       }
+
+      .list article {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr 1.2fr 1.5fr;
+        
+    }
 }   
 
   

@@ -12,31 +12,31 @@ async function getProphetData() {
 
     companies.forEach((company) => { 
       let card = document.createElement('article');
-      let card1 = document.createElement('div');
-      card1.setAttribute('id', 'logo')
-      
-    let  card2 = document.createElement('div');
-      card2.setAttribute('id', 'detail')
 
 
     let name = document.createElement('h2');
+    name.classList.add("details");
     let address = document.createElement('h3');
-    let memLevel = document.createElement('h3');
     let phoneNum = document.createElement('h3');
     let rates = document.createElement('h3');
+    rates.classList.add("detail");
     let found = document.createElement('h3');
-    let websiteUrl = document.createElement('h3');
+    found.classList.add("detail");
+    let websiteUrl = document.createElement('a');
+
+    
     let imageUrl = document.createElement('img');
 
     
       // Build the h2 content out to show the company's full name - finish the template string
       name.textContent = `${company.name}`;
       address.textContent = `${company.address}`;
-      memLevel.textContent = `${company.membershiplevel}`;
       phoneNum.textContent = `${company.phonenum}`
-      rates.textContent = `${company.rate}`
-      found.textContent = `${company.founded}`
+      rates.textContent = `Rate: ${company.rate} ⭐`
+      found.textContent = `Founded: ${company.founded}`
+      websiteUrl.href=`${company.websiteurl}`;
       websiteUrl.textContent = `${company.websiteurl}`
+      websiteUrl.setAttribute('target', '_blank')
 
       // Build the image portrait by setting all the relevant attribute
       imageUrl.setAttribute('src', company.imageurl);
@@ -46,30 +46,33 @@ async function getProphetData() {
       imageUrl.setAttribute('id', 'complog');
   
       // Append the section(card) with the created elements
-    //   card1.appendChild(name);
-      card1.appendChild(imageUrl);
-      card2.appendChild(address);
-      card2.appendChild(memLevel);
-      card2.appendChild(phoneNum);
-    //   card2.appendChild(rates);
-    //   card2.appendChild(found);
-      card2.appendChild(websiteUrl);
-
-     card.appendChild(card1);
-     card.appendChild(card2);  
+      card.appendChild(name);
+      card.appendChild(imageUrl);
+      card.appendChild(address);
+      card.appendChild(phoneNum);
+      card.appendChild(rates);
+      card.appendChild(found);
+      card.appendChild(websiteUrl);  
      
      cards.appendChild(card)
 
 
-    //  const decadeBtn = document.querySelector('.decade');
+    const gridbutton = document.querySelector("#grid");
+    const listbutton = document.querySelector("#list");
 
-    //    decadeBtn.addEventListener("click", filte);
-
-    //    function filte(){
-    //      if(companies.length<11){
-    //        card.remove()
-    //      }
-    //    }
+    gridbutton.addEventListener("click", () => {
+      // example using arrow function
+    cards.classList.add("grid");
+    cards.classList.remove("list");
+    });
+    
+    listbutton.addEventListener("click", showList); // example using defined function
+    
+    function showList() {
+      cards.classList.add("list");
+      cards.classList.remove("grid");
+    }
+    
        
 }); // end of forEach loop
 
