@@ -641,8 +641,6 @@ td {
 /* ----------- FORM ---------------*/
 .form {
   padding: 0 2%;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
 }
 
 form fieldset {
@@ -694,9 +692,10 @@ form label.sbs {
   display: none;
 }
 
-.form {
-  display: grid;
-  flex-flow: column wrap;
+#formcontent {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  row-gap: 50px;
 }
 
 #joinform input.submiBtn {
@@ -711,13 +710,6 @@ form label.sbs {
   font-size: 1rem;
 }
 
-/* #joinform {
-  max-width: 70%;
-} */
-
-#smalmembtble {
-margin-top: 10%;
-}
 
 form label.top input:required {
   border: red solid 1px;
@@ -847,4 +839,8 @@ h1 {
 
 .rembut {
   display: none;
+}
+
+.visit h2 {
+  font-size: 1rem;
 }

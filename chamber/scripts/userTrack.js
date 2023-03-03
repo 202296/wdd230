@@ -1,6 +1,6 @@
 const lastVisitDisplay = document.querySelector(".today");
 
-const lastVisit = window.localStorage.getItem("last-visit")
+const lastVisit = localStorage.getItem("last-visit")
 const cd = new Date();
 
 
@@ -13,7 +13,6 @@ if (lastVisit.indexOf(lastVisit) > -1) {
 
 // Store the date in the storage
 localStorage.setItem('last-visit', cd);
-
 
 
 
