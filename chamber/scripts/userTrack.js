@@ -23,8 +23,12 @@ if (lastVisit) {
   lastVisitDisplay.innerText = `Today`;
 
   } else{
+   if (difDays == 1) {
+      lastVisitDisplay.innerText = `${difDays} day ago`;
+   }
+   else{
    lastVisitDisplay.innerText = `${difDays} days ago`;
-    
+   }
   }
 } else{
    lastVisitDisplay.innerText = "This is your first visit"
@@ -32,19 +36,6 @@ if (lastVisit) {
 
 // Store the current visit date in local storage
 localStorage.setItem('lastVisit', curDate);
-
-
-
-
-
-// // Check if the localStorage exists and if so, output the date
-// if (lastVisit.indexOf(lastVisit) > -1) {
-//    lastVisitDisplay.innerHTML = `${lastVisit}`;
-// }
-
-
-// // Store the date in the storage
-// localStorage.setItem('last-visit', cd);
 
 
 
