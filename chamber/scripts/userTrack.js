@@ -14,7 +14,7 @@ const dateTime = curDate.getTime();
 // Get the date of the last visit from local storage
 const lastVisit = localStorage.getItem('lastVisit');
 let numberVisits = Number(window.localStorage.getItem("visits-ls")); // Using the Number() function ensures that if the storage item does not exist, it will be converted into a zero (0) which helps on the if block condition.
-if (lastVisit || numberVisits) {
+if (lastVisit) {
   // Calculate the difference in time between the last visit and the current visit
   const difTime = dateTime - new Date(lastVisit).getTime();
 
