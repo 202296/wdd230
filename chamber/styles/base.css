@@ -850,6 +850,7 @@ h1 {
   display: none;
 }
 
-.visit h2 {
+.visit h4 {
   font-size: 1rem;
+  color: black;
 }
