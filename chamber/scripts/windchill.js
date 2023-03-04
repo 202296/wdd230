@@ -14,6 +14,7 @@ const api = `https://api.openweathermap.org/data/2.5/weather?q=Abidjan&appid=a1d
             const{feels_like}= data.main;
             const id = data['weather']['0']['id'] ;
             const descrip= data['weather']['0']['description'] ;
+            const weathIcon =  `https://openweathermap.org/img/w/${data['weather']['0']['icon']}.png`
             const wndSpdKm= data['wind']['speed'] ;
             const wndSpdMiles= wndSpdKm / 1.609
             const tempFah = (feels_like - 273.15) * 9/5 + 32
@@ -24,27 +25,13 @@ const api = `https://api.openweathermap.org/data/2.5/weather?q=Abidjan&appid=a1d
                   } else {
                 wndChill.textContent= 'N/A'
             }
+      
+            tempIcon.setAttribute('src', weathIcon);
+            tempIcon.setAttribute('alt', descrip);
             
-            if(id<300 && id>200) {
-                tempIcon.src='images/thunderstorm.webp'
-            }
-            else if(id<400 && id>300) {
-                tempIcon.src='images/cloud-solid.webp'
-            }
-            else if(id<600 && id>500) {
-                tempIcon.src='images/rainy.webp'
-            }
-            else if(id<700 && id>600) {
-                tempIcon.src='images/snow.webp'
-            }
-            else if(id<800 && id>700) {
-                tempIcon.src='images/clouds.webp'
-            }
-            else if(id == 800) {
-                tempIcon.src="images/clouds_and_sun.webp"
-            }
 
-            description.textContent = descrip
+
+            description.textContent = descrip.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
             wind.textContent = `${wndSpdKm} km/h`
             tempValue.textContent= Math.round(feels_like - 273);
         });

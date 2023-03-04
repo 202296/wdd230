@@ -45,7 +45,12 @@ sumbo.appendChild(parag)
 const sumbol = document.getElementById('large');
 sumbol.innerHTML = `&copy; ${fullYear} Spirit of Enterprise | Koko Mouhamed Jean Patrick | WDD 230 Project | Last Modification: ${document.lastModified}`;
 
-
+document.querySelectorAll('.nav-link').forEach(link => {
+  if(link.href === window.location.href){
+    link.setAttribute('aria-current', 'page')
+    console.log(link)
+  }
+})
 
 
 const weekDay = d.getDay();

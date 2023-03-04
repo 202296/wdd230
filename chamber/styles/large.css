@@ -186,6 +186,12 @@ p{
   margin: 2px 0 0 0;
 }
 
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+
 form label.sbs {
   padding: .4rem 0;
 }

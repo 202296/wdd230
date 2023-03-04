@@ -31,6 +31,8 @@ async function apiFetch() {
       
         weatherIcon.setAttribute('src', iconsrc);
         weatherIcon.setAttribute('alt', desc);
-        captionDesc.textContent = desc;
-      }
+        captionDesc.textContent = desc.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+
+        
+              }
 

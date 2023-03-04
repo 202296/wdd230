@@ -59,11 +59,15 @@ async function getProphetData() {
 
     const gridbutton = document.querySelector("#grid");
     const listbutton = document.querySelector("#list");
+    const lit = document.querySelector('.fa-th-large')
+    const litbar = document.querySelector('.fa-bars')
 
     gridbutton.addEventListener("click", () => {
       // example using arrow function
     cards.classList.add("grid");
     cards.classList.remove("list");
+      listbutton.classList.remove('active');
+      gridbutton.classList.add('active');
     });
     
     listbutton.addEventListener("click", showList); // example using defined function
@@ -71,7 +75,13 @@ async function getProphetData() {
     function showList() {
       cards.classList.add("list");
       cards.classList.remove("grid");
+      gridbutton.classList.remove('active');
+      listbutton.classList.add('active');
     }
+
+    
+      
+  
     
        
 }); // end of forEach loop
