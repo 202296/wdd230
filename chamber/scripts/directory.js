@@ -57,26 +57,24 @@ async function getProphetData() {
      cards.appendChild(card)
 
 
-    const gridbutton = document.querySelector("#grid");
-    const listbutton = document.querySelector("#list");
-    const lit = document.querySelector('.fa-th-large')
-    const litbar = document.querySelector('.fa-bars')
+    const gridButton = document.querySelector("#grid");
+    const listButton = document.querySelector("#list");
 
-    gridbutton.addEventListener("click", () => {
+    gridButton.addEventListener("click", () => {
       // example using arrow function
     cards.classList.add("grid");
     cards.classList.remove("list");
-      listbutton.classList.remove('active');
-      gridbutton.classList.add('active');
+      listButton.classList.remove('active');
+      gridButton.classList.add('active');
     });
     
-    listbutton.addEventListener("click", showList); // example using defined function
+    listButton.addEventListener("click", showList); // example using defined function
     
     function showList() {
       cards.classList.add("list");
       cards.classList.remove("grid");
-      gridbutton.classList.remove('active');
-      listbutton.classList.add('active');
+      gridButton.classList.remove('active');
+      listButton.classList.add('active');
     }
 
     

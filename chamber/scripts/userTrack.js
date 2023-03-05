@@ -39,5 +39,24 @@ localStorage.setItem('lastVisit', curDate);
 
 
 
+document.querySelector('form').addEventListener('submit', function(e) {
+   // Prevent the default form submission behavior
+   e.preventDefault();
+ 
+   // Get the current date and time
+   var datetime = curDate.toISOString();
+ 
+   // Set the value of the hidden field to the current date and time
+   document.getElementById('datetime').value = datetime;
+ 
+   // Submit the form
+   this.submit();
+ });
+ 
+
+ 
+ 
+
+
 
 
