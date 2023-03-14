@@ -849,7 +849,7 @@ h1 {
 }
 
 
-.rembut {
+.rembut, .lab {
   display: none;
 }
 
@@ -920,3 +920,4 @@ iframe {
   padding: 15px;
   width: 12ch;
 }
+
