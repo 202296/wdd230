@@ -903,8 +903,14 @@ iframe {
   border-radius: 5px;
 }
 
-.newsletter h1 {
+.newsletter h2 {
   color: #FFFFFF;
+  margin: 10px;
+  text-align: center;
+}
+
+#main-contact h3 {
+  color: #000000;
 }
 
 .newsletter form #email {
