@@ -1,0 +1,45 @@
+@media only screen and (min-width: 32.5em) {
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flogo {
+        display: flex;
+    }
+
+    .flogo h3 {
+        margin: 2.7ch 0 0 1ch;
+    }
+
+    .logo {
+        width: 60px;
+          border-radius: 50px;
+          margin: 0 5px;   
+      }
+
+      .primaryNav {
+        top: 31ch;
+      }
+
+      #medium {
+        display: block;
+      }
+
+      #info, #large{
+        display: none;
+     }
+
+     .product-foods img, .fruit-foods img, .drink img{
+      width: 50ch;
+    }
+
+    .gift {
+      display: none;
+    }
+
+     .products, .fruits, .drinks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}

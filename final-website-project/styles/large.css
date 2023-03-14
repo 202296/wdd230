@@ -1,0 +1,74 @@
+@media only screen and (min-width: 64em) {
+    
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        font-weight: bolder;
+        font-size: 2rem;
+        color: #000000;
+        text-decoration: none;
+        margin: 2.5ch;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .social-media {
+        order: 2;
+    }
+    
+    
+    #hamburguerBtn {
+      display: none;
+    }
+
+    .social-media {
+        order: 2;
+    }
+    
+
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #large {
+        display: block;
+      }
+
+      #info, #medium{
+        display: none;
+     }
+
+   
+
+    .hamburguerBtn {
+    display: none;
+    }
+
+    .primaryNav {
+        display: none;
+    }
+
+    .comp {
+        font-size: 3rem;
+      }
+
+      .moto {
+        font-size: 2rem;
+      }
+
+      .welcome {
+        font-size: 1.8rem;
+      }
+
+      .story {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+}

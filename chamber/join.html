@@ -71,14 +71,14 @@
     <form action="thankyou.html" method="get">
         <fieldset >
             <legend>Application Information</legend>
-           <label class="top" > First Name* <input type="text" name="fname" id="fname" required></label>
-           <label class="top" > Last Name* <input type="text" name="lname" id="lname" required></label>
-            <label class="top"> Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-           <label class="top"> Phone <input type="tel" name="phone" required></label>
+           <label class="top" > First Name <span class="star">*</span> <input type="text" name="fname" id="fname" required></label>
+           <label class="top" > Last Name <span class="star">*</span> <input type="text" name="lname" id="lname" required></label>
+            <label class="top"> Email<span class="star">*</span> <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+           <label class="top"> Phone <span class="star">*</span><input type="tel" name="phone" required></label>
            
-           <label class="top" id="top"> Job Title* <input type="text" name="job" pattern="^[a-zA-Z\s-]{7,}$"></label>
-           <label class="top"> Business Name*<input type="text" name="company" required></label>
-           <label class="top"> Business Description*<textarea name="description" rows="4" cols="50"></textarea></label>
+           <label class="top" id="top"> Job Title <input type="text" name="job" pattern="^[a-zA-Z\s-]{7,}$"></label>
+           <label class="top"> Business Name <span class="star">*</span><input type="text" name="company" required></label>
+           <label class="top"> Business Description<textarea name="description" rows="4" cols="50"></textarea></label>
            <div>Membership Levels</div>
            <label class="sbs"><input type="radio" name="audience" value="Non Profit">Non Profit</label>
             <label class="sbs"><input type="radio" name="audience" value="Bronze">Bronze</label>

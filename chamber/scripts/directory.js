@@ -1,13 +1,13 @@
 const url = 'https://202296.github.io/wdd230/data.json';
 
-async function getProphetData() {
+async function getCompaniesData() {
   const response = await fetch(url);
   const data = await response.json();
   console.log(data)
 
 
 
-  const displayProphets = (companies) => {
+  const displayCompanies = (companies) => {
     const cards = document.querySelector('div.cardir'); // select the output container element
 
     companies.forEach((company) => { 
@@ -75,17 +75,12 @@ async function getProphetData() {
       cards.classList.remove("grid");
       gridButton.classList.remove('active');
       listButton.classList.add('active');
-    }
-
-    
-      
-  
-    
+    } 
        
 }); // end of forEach loop
 
   }; // end of function expression
-  displayProphets(data.companies)
+  displayCompanies(data.companies)
 }
 
-getProphetData();
+getCompaniesData();

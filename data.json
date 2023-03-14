@@ -7,6 +7,8 @@
         "membershiplevel": "Gold",
         "founded": "1959",
         "rate": "3.4",
+        "message": "Water distribution company",
+        "businessemail": "sodeci@sodeci.ci",
         "websiteurl": "https://www.sodeci.ci/",
         "imageurl": "https://www.sodeci.ci/public/assets/images/logo.png"
       },
@@ -17,6 +19,8 @@
         "membershiplevel": "Silver",
         "founded": "1822",
         "rate": "4.1",
+        "message": "Major operator of transport and logistics",
+        "businessemail": "contact@bollore.com",
         "websiteurl": "https://www.bollore.com/fr/",
         "imageurl": "https://www.bollore.com/bollo-content/themes/bollore/img/logo.svg"
       },
@@ -27,6 +31,8 @@
         "membershiplevel": "Gold",
         "founded": "1960",
         "rate": "3.7",
+        "message": "Abidjan Transport company",
+        "businessemail": "infos@sotra.ci",
         "websiteurl": "http://www.sotra.ci/www/s/",
         "imageurl": "https://storage.googleapis.com/zoomzoomzenlive.appspot.com/network_sotra.png"
       },
@@ -37,6 +43,8 @@
         "membershiplevel": "Silver",
         "founded": "2007",
         "rate": "3.3",
+        "message": "Biometric passport agency",
+        "businessemail": "contact@snedai.com",
         "websiteurl": "https://snedai.com/",
         "imageurl": "https://snedai.com/wp-content/uploads/2017/04/logo-web-snedai-groupe.jpg"
       },
@@ -47,6 +55,8 @@
         "membershiplevel": "Gold",
         "founded": "1990",
         "rate": "4.1",
+        "message": "Ivorian electricity company",
+        "businessemail": "infos@cie.ci",
         "websiteurl": "https://www.cie.ci/",
         "imageurl": "https://www.cie.ci/public/images/logo.png"
       },
@@ -56,7 +66,9 @@
         "phonenum": "(+225)23-467-070",
         "membershiplevel": "Silver",
         "founded": "1866",
-        "rate": "5",
+        "rate": "5.0",
+        "message": "World's largest food & beverage company",
+        "businessemail": "cacvabidjan@aviso.ci",
         "websiteurl": "https://www.nestle.com/",
         "imageurl": "https://www.nestle.com/themes/custom/da_vinci_code/logo.png"
       },
@@ -67,6 +79,8 @@
         "membershiplevel": "Bronze",
         "founded": "1964",
         "rate": "4.1",
+        "message": "Agro-industriel group specialized in planting, processing and marketing",
+        "businessemail": "communication@sifca.ci",
         "websiteurl": "https://www.groupesifca.com/",
         "imageurl": "https://www.groupesifca.com/wp-content/uploads/2021/04/Logotype_Sifca-1.png"
       },
@@ -77,6 +91,8 @@
         "membershiplevel": "Bronze",
         "founded": "1845",
         "rate": "4.0",
+        "message": "Key player in mobility, healthcare, consumer goods, infrastructure and energy",
+        "businessemail": "ventesci@cfao.com",
         "websiteurl": "https://www.cfaogroup.com/",
         "imageurl": "https://www.cfaogroup.com/wp-content/uploads/2020/09/logo-cfaogroup.svg"
       },
@@ -87,6 +103,8 @@
         "membershiplevel": "Bronze",
         "founded": " 1966",
         "rate": "3.7",
+        "message": "Ivorian society for promotion of supermarkets",
+        "businessemail": "contact@prosuma.com",
         "websiteurl": "https://groupeprosuma.com/",
         "imageurl": "https://groupeprosuma.com/wp-content/themes/prosuma-press/_/img/logo_header.png"
       },
@@ -97,6 +115,8 @@
         "membershiplevel": "Silver",
         "founded": "1994",
         "rate": "4.0",
+        "message": "Africa's largest mobile network operator",
+        "businessemail": "pme.ci@mtn.com",
         "websiteurl": "https://www.mtn.ci/",
         "imageurl": "https://www.mtn.ci/wp-content/themes/mtn-theme-210/images/mtn-logo-nav-.svg"
       }
