@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="the spirit of enterprise home page">
+    <meta name="author" content="Mouhamed Koko">
+    <link rel="shortcut icon" href="/wdd230/favicon.ico" type="image/x-icon">
+    <title>The Spirit of Enterprise Home Page</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    
+</head>
+<body>
+  <div id="content">
+    <header>
+      <div class="header">
+        <div class="head">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 520px)" srcset="images/logo100.webp">
+          <img class="logo" src="images/logo50.webp" alt="the_logo of spirit of enterprise ">
+          </picture>
+        </a> 
+          <h2> <span>The Spirit</span> <br> of Enterprise</h2>
+          
+        </div>
+        <div class="social-media">
+      <a  href="https://www.facebook.com" target="_blank">
+        <picture>
+          <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/facebook48.webp">
+          <source media="(min-width: 1024px)" srcset="images/facebook50.webp">
+        <img class="icon" src="images/facebook45.webp" alt="facebook">
+      </picture>
+      </a>
+
+        <a href="https://www.youtube.com" target="_blank">
+          <picture>
+            <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/youtube48.webp">
+            <source media="(min-width: 1024px)" srcset="images/youtube50.webp">
+          <img class="icon" src="images/youtube45.webp" alt="youtube">
+          </picture>
+        </a>
+      </div>
+         <nav>
+            <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html" class="active nav-link">Home</a></li>
+                <li><a href="discover.html" class="nav-link">Discover</a></li>
+                <li><a href="directory.html" class="nav-link">Directory</a></li>
+                <li><a href="join.html" class="nav-link">Join</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+    <div id="date"></div>
+    </header>
+      <div class="banner" id="banner">
+    <div class="banner-body">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </div>
+    <button class="close-button">&times;</button>
+      </div>
+    <main id="main-contact">
+        <h1>Contact Us</h1>
+        <div class="contact">
+        <div class="contact-us">
+        
+        <div class="address">
+        <h3>Address</h3>
+        <p>05 Place De La Republique <br> Abidjan, Ivory Coast 1996</p>
+
+    </div>
+    <div class="infoContact">
+        <h3 >Contacts</h3>
+        <p>info@spiritofEnt.org <br> (+225) 0548-4897</p>
+    </div>
+    <div class="follow">
+        <h3 >Follow Us</h3>
+       <a href="https://www.facebook.com"><img class="icon" src="images/facebook48.webp" alt="business facebook account"></a>
+       <a href="https://www.youtube.com"><img class="icon" src="images/youtube48.webp" alt="business youtube account"></a>
+    </div>
+    </div>
+    
+    <div class="message-form">
+        <h2>Leave us a message</h2>
+        <form action="thankyou.html" method="get">
+                
+               <label class="top" > First Name <span class="star">*</span> <input type="text" name="fname" id="fname" required></label>
+               <label class="top" > Last Name <input type="text" name="lname" id="lname"></label>
+                <label class="top"> Email<span class="star">*</span> <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+               <label class="top"> Phone <input type="tel" name="phone"></label>
+               <label class="top"> Question/Concern
+                <span class="star">*</span><textarea name="description" rows="4" cols="50" required></textarea></label>
+         
+            <input type="submit" value="Send Message" class="submiBtn">
+          </form>  
+    </div>
+        </div>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.6344971469075!2d-4.020940726105017!3d5.319575335984126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebb820467431%3A0x8f32854ba769cc6d!2sChamber%20of%20Commerce%20and%20Industry%20of%20Ivory%20Coast!5e0!3m2!1sen!2sci!4v1678805070304!5m2!1sen!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <div class="newsletter">
+            <h1>
+                Subscribe to our Newsletter
+            </h1>
+
+            <form action="thankyou.html" method="get">
+                <input type="email" name="email" placeholder="someone@gmail.com" id="email" required>
+             
+                <input type="submit" value="Subscribe" class="submiBtn">
+              </form>  
+            
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="foot">
+          <picture>
+            <source media="(min-width: 520px)" srcset="images/logo150.webp">
+        <img class="foot-logo" src="images/logo100.webp" alt="my_logo">
+          </picture>
+        <div class="address-one">
+          <h3>The Spirit of Enterprise</h3>
+          <h4>05 Place De La Republique</h4>
+          <h4>Abidjan, Ivory Coast 1996</h4>
+        </div>
+        <div class="address-two">
+          <h4> 📧 info@spiritofEnt.org</h4>
+          <h4> 📞 (+225) 0548-4897</h4>
+          <a href="https://maps.app.goo.gl/UXqpLMBrB191CCte9?g_st=iwb" target="_blank"> 📍 Location Map</a>
+        </div>
+        </div>
+        <div class="foot-info">
+        <hr>
+          <h4 id="info">#</h4>
+          <h4 id="medium">#</h4>
+          <h4 id="large">#</h4>
+        </div> 
+        <p>Weather data source: <a href="https://openweathermap.org/" target="_blank" >OpenWeatherMap</a></p>
+      </footer>
+      </div>
+      <script src="scripts/scripts.js"></script>  
+    </body>
+    </html>

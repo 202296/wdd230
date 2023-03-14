@@ -93,15 +93,9 @@
     flex-direction: column;
     border: 1px solid gray;
   }
-  .spot-two {
-    margin: 5px 0;
-  }
 
   #spotlights h4 {
     font-size: .8rem;
-  }
-  .spot-three {
-    display: block;
   }
 
   #medium{
@@ -161,17 +155,18 @@ p{
   }
 
 
-  .address-two h4, .address-two a {
-	font-size: 1.1rem;
-  }
+  
 
-  .address-one h4 {
-	font-size: 1.1rem;
-  }
+#spotlight-3 {
+    display: block;
+}
 
-  .address-one h3 {
-	font-size: 1.3rem;
-  }
+
+
+#spotlight-1, #spotlight-2, #spotlight-3 {
+    height: 100%;
+    width: auto;
+}
 
   .foot {
     grid-template-columns: 12% 20% 22%;

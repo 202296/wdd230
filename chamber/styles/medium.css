@@ -98,30 +98,10 @@
     grid-template-columns: 110px 1fr 1fr;
   }
 
-  
-  .spot-one, .spot-two, .spot-three{
-    padding: 15px;
-    margin-bottom: 0;
-  }
 
-  .address-two h4 {
-    margin: 0;
-  }
-
-  .address-two h4, .address-two a, .address-one h3, .address-one h4{
-    font-size: 1.2rem;
-    
-  }
-
-  .address-one h3{
-    font-size: 1.5rem;
-    font-weight: bolder;
-  }
-
- .address-one, .address-two
- {
-  margin-top: 15px;
-} 
+#spotlight-1, #spotlight-2 {
+    width: 50%;
+}
 
   .logo {
     width: 90px;
@@ -205,6 +185,22 @@ nav li {
         grid-template-columns: 1fr 1.2fr 1.2fr 1.5fr;
         
     }
+
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 25px;
+    }
+    
+    .address, .infoContact, .follow{
+      margin: 5px;
+    }
+    .contact-us {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
 }   
 
   

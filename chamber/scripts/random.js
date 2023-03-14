@@ -9,65 +9,33 @@ async function displayBuisinesses() {
 }
 
 function randomDataDisplay(data) {
-    const highMembershipLevels = data.filter(business => {
-        return business.membershiplevel === "Silver" || business.membershiplevel === "Gold";
+    const filterLevel = data.filter(levels => {
+        return levels.membershiplevel === "Silver" || levels.membershiplevel === "Gold";
     })
 
-    const selectedBusinesses = [];
-    while (selectedBusinesses.length < 3) {
-        const randomIndex = Math.floor(Math.random() * highMembershipLevels.length);
-        const randomBusiness = highMembershipLevels[randomIndex];
-        selectedBusinesses.push(randomBusiness);
-        highMembershipLevels.splice(randomIndex, 1);
+    const filterCompany = [];
+    while (filterCompany.length < 3) {
+        const randomIndex = Math.floor(Math.random() * filterLevel.length);
+        const randomCompany = filterLevel[randomIndex];
+        filterCompany.push(randomCompany);
+        filterLevel.splice(randomIndex, 1);
     } 
 
-    selectedBusinesses.forEach((item, index) => {
+    filterCompany.forEach((company, index) => {
         const spotlight = document.createElement("section");
         spotlight.id = `spotlight-${index + 1}`;
 
-        const title = document.createElement("h2");
-        title.innerText = item.name;
-        spotlight.appendChild(title);
-
-        const image = document.createElement("img");
-        image.src = item.imageurl; 
-        image.alt = item.businessName; 
-        spotlight.appendChild(image);
-
-        const catchphrase = document.createElement("h3");
-        catchphrase.innerText = item.catchPhrase;
-        spotlight.appendChild(catchphrase);
-
-        const divider = document.createElement("hr");
-        spotlight.appendChild(divider);
-
-        const bottomRow = document.createElement("div");
-        bottomRow.classList.add("bottom-row");
-
-        const phoneNumber = document.createElement("h4");
-        phoneNumber.innerText = item.phonenum;
-        bottomRow.appendChild(phoneNumber);
-
-        const line = document.createElement("h4");
-        line.innerText = " | ";
-        bottomRow.appendChild(line);
-
-        const link = document.createElement("a")
-        link.href = item.websiteurl;
-        link.target ="_blanc"; 
-
-        const linkTitle = document.createElement("h4");
-        linkTitle.innerText = "Website";
-        link.appendChild(linkTitle);
-
-        bottomRow.appendChild(link);
-
-        spotlight.appendChild(bottomRow);
+spotlight.innerHTML = `<h2>${company.name}</h2>
+                               <img src='${company.imageurl}' alt='the logo of ${company.name}'>
+                               <h3>${company.message}</h3>
+                               <hr>
+                               <h4>${company.businessemail}</h4>
+                               <h4>${company.phonenum} | <span><a href='${company.websiteurl}'>Website</a></span></h4>`
 
         display.appendChild(spotlight);
     })
 
-    console.log(selectedBusinesses);
+    console.log(filterLevel);
 }
 
 displayBuisinesses(); 
