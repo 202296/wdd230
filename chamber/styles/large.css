@@ -1,134 +1,133 @@
 @media only screen and (min-width: 64em) {
-    main {
-      max-width: 1600px;
-    }
+main {
+  max-width: 1600px;
+}
 
-    header {
-        grid-template-columns: 250px 1fr 200px;
-        
-    }
+header {
+  grid-template-columns: 250px 1fr 200px;
     
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        position: initial;
-        justify-content: space-between;
-        background-color: white;
-    }
+}
 
-    nav ul li a {
-        font-size: 20px;
-        font-weight: bolder;
-    }
+nav ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  position: initial;
+  justify-content: space-between;
+  background-color: white;
+}
 
-    .header {
-        
-        flex-wrap: nowrap;
-    }
+nav ul li a {
+  font-size: 20px;
+  font-weight: bolder;
+}
 
-    .social-media {
-        order: 2;
-    }
-    
-    
-    #hamburguerBtn {
-      display: none;
-    }
-    
-    
-    nav {
-        grid-column: 2/3;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        grid-row: 1;
-        order: 1;
-        
-    }
+.header {
   
-  .main {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: repeat( 3, minmax(320px, auto) );
-    grid-template-areas: 
-      "event   hero spotlights"
-      "weather hero spotlights"
-      "join    news spotlights";
-  }
+  flex-wrap: nowrap;
+}
 
-  .hero {
-    grid-area: hero;
-    padding: 0;
-  }
-
-  .hero h1 {
-    font-size: 3.5rem;
-  }
-
-  .head_join a {
-    font-size: 1.9rem;
-  }
-
-  .news {
-    grid-area: news;
-  }
-
-  .event {
-    grid-area: event;
-  }
-
-  .weather {
-    grid-area: weather;
-    margin: 0;
-  }
-
-  .join {
-    grid-area: join;
-  }
-
-  #spotlights {
-    grid-area: spotlights;
-    flex-direction: column;
-    border: 1px solid gray;
-  }
-
-  #spotlights h4 {
-    font-size: .8rem;
-  }
-
-  #medium{
-    display: none;
-  }
-
-  #large {
-    display: block;
-    font-size: 1.1rem;
-  }
+.social-media {
+  order: 2;
+}
 
 
-  header h2 {
-    font-size: 1.4rem;
-    color: black;
-    margin-top: 15px;
-    }
-  
-  .header h2 span {
-    font-size: 1.6rem;
-    }
+#hamburguerBtn {
+  display: none;
+}
 
-    .icon{
-      width: 35px;
-      height: 35px;
-      margin: 0 2px;
-      background-color: white;
-      border-radius: 20px;
-  }
 
-  #date h2 {
-    font-size: 1.2em;
-    padding: 5px 0;
+nav {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  order: 1;  
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: repeat( 3, minmax(320px, auto) );
+  grid-template-areas: 
+    "event   hero spotlights"
+    "weather hero spotlights"
+    "join    news spotlights";
+}
+
+.hero {
+  grid-area: hero;
+  padding: 0;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.head-join a {
+  font-size: 1.9rem;
+}
+
+.news {
+  grid-area: news;
+}
+
+.event {
+  grid-area: event;
+}
+
+.weather {
+  grid-area: weather;
+  margin: 0;
+}
+
+.join {
+  grid-area: join;
+}
+
+#spotlights {
+  grid-area: spotlights;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+#spotlights h4 {
+  font-size: .8rem;
+}
+
+#medium{
+  display: none;
+}
+
+#large {
+  display: block;
+  font-size: 1.1rem;
+}
+
+
+header h2 {
+  font-size: 1.4rem;
+  color: black;
+  margin-top: 15px;
+}
+
+.header h2 span {
+  font-size: 1.6rem;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#date h2 {
+  font-size: 1.2em;
+  padding: 5px 0;
 }
 
 h2 {
@@ -141,45 +140,38 @@ h3 {
 
 h4, .detail h4 {
   font-size: 1.2rem;
+  color: #000000;
 }
-p{
+
+p {
   font-size: 1.2rem;
 }
 
 #info {
-	font-size: 1.1em;
+  font-size: 1.1em;
   }
 
-  footer #large {
-	font-size: .9em;
-  }
-
-
+footer #large {
+  font-size: .9em;
+}
   
 
 #spotlight-3 {
-    display: block;
+  display: block;
 }
-
-
 
 #spotlight-1, #spotlight-2, #spotlight-3 {
-    height: 100%;
-    width: auto;
+  height: 100%;
+  width: auto;
 }
 
-  .foot {
-    grid-template-columns: 12% 20% 22%;
-    justify-content: center;
+.foot {
+  grid-template-columns: 12% 20% 22%;
+  justify-content: center;
 }
 
-#diamond {
-  font-size: 1.4rem;
-}
 
-#message1 {
-  margin: 2px 0 0 0;
-}
+/* Discover page styles */
 
 .modal {
   position: absolute;
@@ -187,11 +179,13 @@ p{
   left: 15%;
 }
 
+/*--- Join page styles  */
+
 form label.sbs {
   padding: .4rem 0;
 }
 
-#formcontent {
+#form-content {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   max-width: fit-content;
@@ -210,6 +204,10 @@ form label.sbs {
 #smalmembtble {
   display: none;
 }
+
+
+
+/* Directory page styles */
 
 .list article {
   display: grid;

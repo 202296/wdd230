@@ -42,4 +42,23 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
+
+    .final-Story {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 25px;
+    }
+
+    .final-Story img {
+      width: 100%;
+    }
+
+    .story-contact {
+      margin: 10ch 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 8ch;
+      
+    }
+
 }

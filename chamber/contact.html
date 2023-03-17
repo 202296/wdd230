@@ -19,12 +19,10 @@
     <header>
       <div class="header">
         <div class="head">
-        <a href="#">
           <picture>
             <source media="(min-width: 520px)" srcset="images/logo100.webp">
           <img class="logo" src="images/logo50.webp" alt="the_logo of spirit of enterprise ">
           </picture>
-        </a> 
           <h2> <span>The Spirit</span> <br> of Enterprise</h2>
           
         </div>
@@ -73,7 +71,7 @@
         <h3>05 Place De La Republique <br> Abidjan, Ivory Coast 1996</h3>
 
     </div>
-    <div class="infoContact">
+    <div class="info-contact">
         <h2 >Contacts</h2>
         <h3>info@spiritofEnt.org <br> (+225) 0548-4897</h3>
     </div>
@@ -85,15 +83,21 @@
     </div>
     
     <div class="message-form">
-        <h2>Leave us a message</h2>
         <form action="thankyou.html" method="get">
-                
+          <fieldset >
+            <legend>Leave us a message</legend>
                <label class="top" > First Name <span class="star">*</span> <input type="text" name="fname" id="fname" required></label>
-               <label class="top" > Last Name <input type="text" name="lname" id="lname"></label>
+               <label class="top" > Last Name <span class="star">*</span><input type="text" name="lname" id="lname" required></label>
                 <label class="top"> Email<span class="star">*</span> <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-               <label class="top"> Phone <input type="tel" name="phone"></label>
+               <label class="top"> Phone <span class="star">*</span><input type="tel" name="phone" required></label>
                <label class="top"> Question/Concern
                 <span class="star">*</span><textarea name="description" rows="4" cols="50" required></textarea></label>
+                <div>Are you a Chamber Member? <span class="star">*</span></div>
+           <label class="sbs"><input type="radio" name="audience" value="Non Profit" required>Yes</label>
+            <label class="sbs"><input type="radio" name="audience" value="Bronze" required>No</label>
+            <label class="sbs"><input type="radio" name="audience" value="Silver" required>Not sure</label>
+                <input type="hidden" id="datetime" name="datetime" value="">  
+        </fieldset>
          
             <input type="submit" value="Send Message" class="submiBtn">
           </form>  
@@ -137,9 +141,9 @@
         </div>
         <div class="foot-info">
         <hr>
-          <h4 id="info">#</h4>
-          <h4 id="medium">#</h4>
-          <h4 id="large">#</h4>
+          <h4 id="info">© 2023 Spirit of Enterprise Koko Mouhamed Jean Patrick WDD 230 Project Last Modification: 03/17/2023 13:26:38</h4>
+          <h4 id="medium">© 2023 Spirit of Enterprise | Koko Mouhamed Jean Patrick | WDD 230 Project | Last Modification: 03/17/2023 13:26:38</h4>
+          <h4 id="large">© 2023 Spirit of Enterprise | Koko Mouhamed Jean Patrick | WDD 230 Project | Last Modification: 03/17/2023 13:26:38</h4>
         </div> 
         <p>Weather data source: <a href="https://openweathermap.org/" target="_blank" >OpenWeatherMap</a></p>
       </footer>

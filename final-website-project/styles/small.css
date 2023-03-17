@@ -758,3 +758,46 @@ caption {
   color: #FFFFFF;
   height: 20ch;
 }
+
+.main-about {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.final-Story {
+  display: flex;
+  flex-flow: column wrap;
+  
+}
+
+.final-Story img {
+  width: 100%;
+}
+
+.final-Story p {
+  margin: 15px 0;
+
+}
+
+.story-contact {
+  margin: 25px 0;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.story-contact h2 {
+  font-size: 2rem;
+  margin: 5px 0;
+}
+
+.story-contact h4 {
+  margin: 10px 0;
+}
+
+.story-contact h3 {
+  margin-bottom: 2ch;
+}
+
+iframe {
+  width: 100%;
+}

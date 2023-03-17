@@ -61,7 +61,7 @@ async function getCompaniesData() {
     const listButton = document.querySelector("#list");
 
     gridButton.addEventListener("click", () => {
-      // example using arrow function
+      // arrow function
     cards.classList.add("grid");
     cards.classList.remove("list");
       listButton.classList.remove('active');
