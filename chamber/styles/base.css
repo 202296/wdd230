@@ -63,10 +63,6 @@ h3 {
   font-size: 1.9rem;
 }
 
-h4 {
-  font-size: 1.2rem;
-}
-
 header {
 	padding: 10px;
 	color: var(--paragraph-color-on-color);
@@ -302,7 +298,7 @@ section, .join, .join-us, #spotlights, .banner {
 }
 
 .hero h1 {
-  color: #ffffff;
+  color: #000000;
   font-size: 1.8rem;
   font-family: var(--heading-font);
   font-weight: bold;
@@ -426,6 +422,10 @@ section, .join, .join-us, #spotlights, .banner {
 
 #spotlights h4 a {
   text-decoration: none;
+}
+
+#spotlights h4 {
+  font-size: 1.5rem;
 }
   
 footer {
