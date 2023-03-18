@@ -154,6 +154,13 @@ header h2 {
   box-shadow: 5px 5px 25px;
 }
 
+
+/*--- Discover Page ---*/
+
+.presentation p, .explain, figcaption {
+  width: 90%;
+}
+
 /*--- Join page styles ---*/
 
 .form h1 {

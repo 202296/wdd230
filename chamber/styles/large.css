@@ -165,11 +165,6 @@ footer #large {
   width: auto;
 }
 
-.foot {
-  grid-template-columns: 12% 20% 22%;
-  justify-content: center;
-}
-
 
 /* Discover page styles */
 
@@ -178,6 +173,12 @@ footer #large {
   top: 20%;
   left: 15%;
 }
+
+.presentation p, .explain, figcaption {
+  width: 70%;
+  font-size: 1.3rem;
+}
+
 
 /*--- Join page styles  */
 
