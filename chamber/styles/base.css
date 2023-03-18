@@ -886,6 +886,7 @@ caption {
 
 .address h2, .info-contact h2, .follow h2, .find-us h2 {
   margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .address h3, .info-contact h3, .find-us a {
@@ -893,8 +894,9 @@ caption {
 }
 
 .foot-icon {
-  width: 12%;
+  width: 35px;
   border-radius: 50px;
+  margin: 0 5px;
 }
 
 .contact {

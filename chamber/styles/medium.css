@@ -200,6 +200,10 @@ form input.submiBtn {
   grid-column-gap: 25px;
 }
 
+.address, .info-contact, .follow, .find-us {
+  margin: 0;
+}
+
 .address, .info-contact, .follow{
   margin: 5px;
 }
