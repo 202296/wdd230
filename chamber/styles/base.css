@@ -302,7 +302,7 @@ section, .join, .join-us, #spotlights, .banner {
 }
 
 .hero h1 {
-  color: black;
+  color: #ffffff;
   font-size: 1.8rem;
   font-family: var(--heading-font);
   font-weight: bold;
@@ -880,8 +880,21 @@ caption {
   padding: 15px;
 }
 
-.address h3, .infoContact h3, .follow h3, .find-us{
-  margin: 10px 0;
+.address, .info-contact, .follow, .find-us {
+  margin: 35px 0;
+}
+
+.address h2, .info-contact h2, .follow h2, .find-us h2 {
+  margin-bottom: 10px;
+}
+
+.address h3, .info-contact h3, .find-us a {
+  font-size: 1.5rem;
+}
+
+.foot-icon {
+  width: 12%;
+  border-radius: 50px;
 }
 
 .contact {
