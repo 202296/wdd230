@@ -133,12 +133,12 @@ nav li {
 }
 
 header h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 12px;
 }
 
 .header h2 span {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 #date h2 {
@@ -212,6 +212,10 @@ form input.submiBtn {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 4ch;
+}
+
+.message-form {
+  margin-top: 0;
 }
     
 }   

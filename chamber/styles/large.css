@@ -44,7 +44,8 @@ nav {
   justify-content: center;
   align-items: center;
   grid-row: 1;
-  order: 1;  
+  order: 1; 
+  margin: 0 10px; 
 }
 
 .main {
@@ -107,13 +108,13 @@ nav {
 
 
 header h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: black;
   margin-top: 15px;
 }
 
 .header h2 span {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .icon {

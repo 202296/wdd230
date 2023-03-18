@@ -96,12 +96,13 @@ main p {
 }
 
 .header h2 span {
-font-size: 1.1rem;
+font-size: 1rem;
 }
 
 .head {
 	display: flex;
 	flex-wrap: wrap;
+  text-align: center;
 }
 
 .logo {
@@ -693,6 +694,7 @@ article {
 #complog {
   height: 75px;
 	max-width: 100%;
+  margin: 10px;
 }
 
 .cardir {
@@ -893,12 +895,6 @@ caption {
   font-size: 1.5rem;
 }
 
-.foot-icon {
-  width: 35px;
-  border-radius: 50px;
-  margin: 0 5px;
-}
-
 .contact {
   padding: 10px;
 }
@@ -907,6 +903,14 @@ caption {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.message-form {
+  margin-top: 10ch;
+}
+
+.message-form form legend {
+  font-size: 1.6rem;
 }
 
 .newsletter {
@@ -941,3 +945,8 @@ caption {
   width: 12ch;
 }
 
+.foot-icon {
+  width: 35px;
+  border-radius: 50px;
+  margin: 0 5px;
+}
