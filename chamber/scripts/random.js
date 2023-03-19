@@ -34,8 +34,6 @@ spotlight.innerHTML = `<h2>${company.name}</h2>
 
         display.appendChild(spotlight);
     })
-
-    console.log(filterLevel);
 }
 
 displayBuisinesses(); 

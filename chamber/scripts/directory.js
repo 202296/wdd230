@@ -3,7 +3,6 @@ const url = 'https://202296.github.io/wdd230/data.json';
 async function getCompaniesData() {
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data)
 
 
 

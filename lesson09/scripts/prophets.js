@@ -10,7 +10,6 @@ async function getProphetData() {
     const cards = document.querySelector('div.cards'); // select the output container element
 
     prophets.forEach((prophet) => { 
-      // console.log(prophet)
       let card = document.createElement('section');
       let card1 = document.createElement('div');
       card1.setAttribute('id', 'card')

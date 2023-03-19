@@ -49,7 +49,6 @@ async function getProphetData() {
 const storedTotalItems = localStorage.getItem('myDivTotalItems');
     const inputs = Array.from(form.elements).filter(input => input.value !== '' && input.name !== 'exclude-me');
     const totalInputs = inputs.length;
-    // console.log(totalInputs); // Outputs the total number of enabled inputs in the form
     const currentDate = new Date();
 
     
