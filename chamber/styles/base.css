@@ -305,7 +305,7 @@ section, .join, .join-us, #spotlights, .banner {
   font-weight: bold;
   text-shadow: 4px 4px 10px rgb(50, 51, 54);
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 20ch;
