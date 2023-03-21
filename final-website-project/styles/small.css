@@ -461,7 +461,6 @@ transform: translate(-50%, -50%);
   color: #FFFFFF;
   font-size: 1.8rem;
   font-family: var(--heading-font);
-  text-shadow: 4px 4px 10px rgb(50, 51, 54);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -472,7 +471,7 @@ transform: translate(-50%, -50%);
     opacity: 0.7;
   }
 
-  .gift p {
+  .gift h3 {
     color: #000000;
     font-weight: bold;
   }
