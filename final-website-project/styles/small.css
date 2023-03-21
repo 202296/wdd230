@@ -429,7 +429,7 @@ main p {
 }
 
 .hero h1, .fruits h2, .drinks h2 {
-color: #000000;
+color: #FFFFFF;
 font-size: 1.8rem;
 font-family: var(--heading-font);
 text-shadow: 4px 4px 10px rgb(50, 51, 54);
