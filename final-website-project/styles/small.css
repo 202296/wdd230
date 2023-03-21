@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
 :root {
   --primary-color: #17202A;
@@ -429,12 +429,12 @@ main p {
 }
 
 .hero h1, .fruits h2, .drinks h2 {
-color: #FFFFFF;
+color: #000000;
 font-size: 1.8rem;
 font-family: var(--heading-font);
 text-shadow: 4px 4px 10px rgb(50, 51, 54);
 position: absolute;
-top: 25%;
+top: 30%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
@@ -510,15 +510,16 @@ position: relative;
 }
 
 .comp {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .moto {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  font-style: italic;
 }
 
 .welcome {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 
