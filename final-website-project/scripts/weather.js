@@ -35,7 +35,7 @@ function weatherReport(data){
 
 function dayForecast(forecast){
     document.querySelector('.weekF').innerHTML=''
-    for (let i = 8; i < forecast.list.length; i+=8) {
+    for (let i = 8; i < forecast.list.length && i < 26; i+=8) {
         let div= document.createElement('div');
         div.setAttribute('class','dayF');
         
