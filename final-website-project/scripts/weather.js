@@ -3,7 +3,7 @@
 const apikey="a1dab4b3dd0e8924d8e02ff045956dac";
 
 
-    var urlsearch= `http://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=metric&appid=${apikey}`;
+    var urlsearch= `https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=metric&appid=${apikey}`;
 
     fetch(urlsearch).then((res)=>{
         return res.json();
@@ -13,7 +13,7 @@ const apikey="a1dab4b3dd0e8924d8e02ff045956dac";
 
 function weatherReport(data){
 
-    var urlcast= `http://api.openweathermap.org/data/2.5/forecast?q=${data.name}&units=metric&` + `appid=${apikey}`;
+    var urlcast= `https://api.openweathermap.org/data/2.5/forecast?q=${data.name}&units=metric&` + `appid=${apikey}`;
 
     fetch(urlcast).then((res)=>{
         return res.json();
