@@ -27,7 +27,7 @@ function weatherReport(data){
         document.getElementById('clouds').innerText= data.weather[0].description;
         
         let icon1= data.weather[0].icon;
-        let iconurl= "http://api.openweathermap.org/img/w/"+ icon1 +".png";
+        let iconurl= "https://api.openweathermap.org/img/w/"+ icon1 +".png";
         document.getElementById('img').src=iconurl
     })
 
