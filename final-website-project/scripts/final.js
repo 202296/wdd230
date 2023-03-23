@@ -37,8 +37,6 @@ const curDate = new Date();
 const dateTime = curDate.getTime();
 
 
-
-
 // Get the date of the last visit from local storage
 const lastVisit = localStorage.getItem('lastVisit');
 
@@ -119,6 +117,6 @@ for(let i=0; i<remove.length; i++){
 }
 
 
-const result = document.getElementById("result");
 const storedTotalDrinks = localStorage.getItem('totalDrinks');
-result.innerText = storedTotalDrinks
+const result = document.getElementById('formdata')
+result.innerHTML = storedTotalDrinks
