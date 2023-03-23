@@ -119,3 +119,6 @@ for(let i=0; i<remove.length; i++){
 }
 
 
+const result = document.getElementById("result");
+const storedTotalDrinks = localStorage.getItem('totalDrinks');
+result.innerText = storedTotalDrinks

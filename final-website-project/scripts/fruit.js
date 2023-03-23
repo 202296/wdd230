@@ -29,6 +29,7 @@ async function getProphetData() {
 
          const form = document.getElementById("my-form");
          const output = document.getElementById("output");
+         const result = document.getElementById("result");
 
    form.addEventListener("submit", function(event) {
   event.preventDefault(); // prevent default form submission behavior
@@ -66,6 +67,8 @@ const storedTotalItems = localStorage.getItem('myDivTotalItems');
       }
 
   let selectedFruits = [mySelect, mySelect1, mySelect2];
+  
+  console.log(result)
   let totalCarbs = 0;
   let totalProtein = 0;
   let totalFat = 0;
@@ -95,6 +98,12 @@ var datetime = currentDate.toISOString();
 // Set the value of the hidden field to the current date and time
 document.getElementById('datetime').value = datetime;
 
+
+
+
+
+
+localStorage.setItem('totalDrinks', `Mr/Mrs ${firstName} you have mixed ${selectedFruits.length} specialty drinks. `);
 });
 
 
