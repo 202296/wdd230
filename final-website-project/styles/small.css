@@ -213,7 +213,7 @@ li {
 
 #date h2 {
     margin: 5px 0;
-    color: white;
+    color: #000000;
     font-style: italic;
     text-align: center;
     font-size: 1.3em;
@@ -580,10 +580,11 @@ h1{
 }
 #clouds{
   font-size: 20px;
-  background: var(--accent3-color);
+  background: var(--paragraph-background-color);
   padding: 2px 20px;
   border-radius: 15px;
 }
+
 .curTemp{
   display: flex;
   flex-direction: row;
@@ -611,7 +612,7 @@ h1{
 }
 .cast-header{
   color: aliceblue;
-  background: var(--accent2-color);
+  background: var(--paragraph-background-color);
   width: max-content;
   padding: 5px 15px;
   border-radius: 20px;
@@ -704,7 +705,7 @@ form label.top input, form label.top select, textarea {
   border: solid 1px #999;
   border-radius: 4px;
   padding: .75rem;
-  color: var(--paragraph-background-color) #023047;
+  color: var(--paragraph-background-color);
   width: 100%;
   max-width: 30rem;
   background-color: rgba(02, 30, 47, 0.8);

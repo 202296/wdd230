@@ -69,13 +69,13 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
             <picture>
               <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/twitter48.webp">
               <source media="(min-width: 1024px)" srcset="images/twitter30.webp">
-            <img class="icon" src="images/twitter45.webp" alt="youtube">
+            <img class="icon" src="images/twitter45.webp" alt="twitter">
             </picture>
           </a>
       </div>
       <nav >
         <button class="hamburguerBtn" >
-            <div class="bar"></div>
+            <span class="bar"></span>
         </button>
         <ul class="nav">
             <li><a href="index.html" class="active nav-link">Home</a></li>
@@ -94,14 +94,15 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
             <li><a href="index.html" class="active nav-link">Home</a></li>
             <li><a href="fresh.html" class="nav-link">Fresh</a></li>
             <li><a href="about.html" class="nav-link">About Us</a></li>
-            <div class="login"> <i class="fas fa-user"></i> <span class="log"> <a href="http://">Login</a> </span> </div>
+            
         </ul>
+        <div class="login"> <i class="fas fa-user"></i> <span class="log"> <a href="fresh.html">Login</a> </span> </div>
     </nav>
          <main class="main-fresh">
             <div id="formcontent">
                 <div id="joinform">
-                  <h2>My Form</h2>
-            <form action="index.html" method="post" id='my-form'>
+                  <h1>My Form</h1>
+            <form id='my-form'>
                 <fieldset name='exclude-me'>
                     <legend>Application Information</legend>
                    <label class="top" > First Name <span class="star">*</span> <input type="text" name="fname" id="fname" required></label>
@@ -109,17 +110,26 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
                     <label class="top"> Email<span class="star">*</span> <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
 
                    <label class="top"> Phone <span class="star">*</span><input type="tel" name="phone" id="phone" required></label>
+
+
+            
             <label class="top">Available Fruit
             <select name="subject" id="mySelect">
-                <option value="">Please Select</option>  
+                <option value="">Please Select &#9662;</option>  
             </select>
+            </label>
 
+
+            <label class="top">Available Fruit
             <select name="subject1" id="mySelect1">
-                <option value="">Please Select</option>  
+                <option value="">Please Select &#9662;</option> 
             </select>
+            </label>
 
+
+            <label class="top">Available Fruit
             <select name="subject2" id="mySelect2">
-                <option value="">Please Select</option>  
+                <option value="">Please Select &#9662;</option> 
             </select>
             </label>
 
@@ -134,6 +144,7 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
 </div>
             </div>
 
+            <h2>Output</h2>
             <div id="output"></div>
             <p id="result"></p>
         </main>
