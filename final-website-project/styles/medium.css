@@ -26,22 +26,20 @@
         display: block;
       }
 
+      .fruit-drink {
+        display: flex;
+        grid-column-gap: 15px;
+      }
+
+      /* .mix-drinkNum {
+        display: flex;
+      } */
+
       #info, #large{
         display: none;
      }
 
-     .product-foods img, .fruit-foods img, .drink img{
-      width: 50ch;
-    }
 
-    .gift {
-      display: none;
-    }
-
-     .products, .fruits, .drinks {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
 
     .final-Story {
       display: grid;
@@ -60,5 +58,4 @@
       grid-column-gap: 8ch;
       
     }
-
 }

@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
 :root {
-  --primary-color: #17202A;
-  --secondary-color: #273746;
-  --accent1-color: #34495E;
-  --accent2-color: #5D6D7E;
-  --accent3-color: #808B96;
-  --accent4-color: #CCD1D1;
+  --primary-color: #023047;
+  --secondary-color: #219EBC;
+  --accent1-color: #8ECAE6;
+  --accent2-color: #FFB703;
+  --accent3-color: #FB8500;
 
   --heading-font: 'Roboto', sans-serif;
   --paragraph-font: 'Open Sans', sans-serif;
@@ -69,7 +68,7 @@ header .container {
   
   body {
     margin: 0 auto;
-	  background-color: #273746;
+	  background-color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,10 +78,6 @@ h1, h2, h3, h4, h5, h6 {
   
 .comp-name{
     font-weight: 900;
-}
-
-img {
-  width: 70%;
 }
 
 .social-media {
@@ -172,7 +167,7 @@ img {
 }
 
 .nav-link[aria-current="page"] {
-    text-decoration: underline solid rgba(238, 219, 7, 0.5) 0.15rem;
+    text-decoration: underline solid var(--accent2-color) 0.15rem;
     text-underline-offset: 0.5rem;
   }
 
@@ -212,7 +207,7 @@ li {
 
 #date {
     grid-column: 1/4;
-    background-color: var(--secondary-color);
+    background-color: var(--accent3-color);
     margin-top: 10px;
 }
 
@@ -249,13 +244,12 @@ li {
   } */
 
 .main-home {
-  background-color: #34495E;
+  background-color: var(--primary-color);
+  opacity: 1;
   color: #FFFFFF;
   
   margin: 0 auto;
 }
-
-
 
 main p {
 	font-family: var(--paragraph-font);
@@ -277,7 +271,7 @@ main p {
   }
   
   .modal::backdrop {
-    background-color: #273746;
+    background-color: #8ECAE6;
     opacity: .7;
   }
   
@@ -286,12 +280,14 @@ main p {
     font-size: 1rem;
     padding: 8px;
   }
+
   .open-button{
     border: none;
     background: none;
     text-decoration: underline;
     color: #FFFFFF;
   }
+
   /* .close-bton {
     position: absolute;
     bottom: 5ch;
@@ -303,16 +299,6 @@ main p {
     margin: 30px 0;
   }
 
-  .close-button {
-    position: absolute;
-    top: 2ch;
-    left: 3ch;
-    border: none;
-    background: none;
-    font-weight: 900;
-    font-size: 1.4rem;
-  }
-
   .modal-body {
     padding: 35px;
   }
@@ -322,6 +308,15 @@ main p {
       margin: 10px;
     font-size: 1.1rem;
     font-family: var(--paragraph-font);
+  }
+
+  .swiper {
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  .swiper-slide img{
+       width: 100%;
   }
 
 
@@ -411,28 +406,55 @@ main p {
 	display: none;
  }
 
- .hero, .fruit-foods, .product-foods, .drink, .mix{
+.hero {
   text-align: center;
   color: white;
   position: relative;
   overflow: hidden;
 }
 
+.hero h1 {
+  color: #000000;
+  font-size: 1.8rem;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  text-shadow: 4px 4px 10px rgb(50, 51, 54);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20ch;
+}
+
+.bountiful-banner img {
+  width: 100%;
+}
+
+
+ .bountiful-banner, .product-foods, .drink, .mix{
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
 .mix {
-  border: 1px solid black;
   padding: 25px;
   min-height: 35ch;
 }
 
-.good-fruits, .good-products, .drinking {
+.good-fruits, .good-products, .drinking, .mix{
   text-align: center;
 }
 
-.hero h1, .fruits h2, .drinks h2 {
+.hero {
+  display: none;
+}
+
+.bountiful-banner h1, .good-products h2 {
 color: #FFFFFF;
 font-size: 1.8rem;
 font-family: var(--heading-font);
-text-shadow: 4px 4px 10px rgb(50, 51, 54);
+text-shadow: 4px 4px 10px black;
 position: absolute;
 top: 30%;
 left: 50%;
@@ -444,7 +466,7 @@ transform: translate(-50%, -50%);
   font-size: 2rem;
 }
 
-.product-foods, .fruit-foods, .drink {
+.product-foods{
   margin: 0 0 15px 0;
 }
 
@@ -482,7 +504,7 @@ border-radius: 12px;
 position: absolute;
 bottom: 8%;
 right: 5%;
-background-color: #1565C0;
+background-color: #219EBC;
 box-shadow: 5px 5px 25px;;
 }
 
@@ -494,7 +516,7 @@ text-decoration: none;
 color: black;
 }
 
-.hero img{
+.bountiful-banner-image{
 width: 100%;
 object-fit: cover;
 position: relative;
@@ -558,7 +580,7 @@ h1{
 }
 #clouds{
   font-size: 20px;
-  background: rgba(153, 205, 50, 0.778);
+  background: var(--accent3-color);
   padding: 2px 20px;
   border-radius: 15px;
 }
@@ -589,7 +611,7 @@ h1{
 }
 .cast-header{
   color: aliceblue;
-  background: rgba(254, 189, 132, 0.539);
+  background: var(--accent2-color);
   width: max-content;
   padding: 5px 15px;
   border-radius: 20px;
@@ -597,18 +619,18 @@ h1{
   margin: 10px;
 }
 .divider{
-  background: rgba(254, 189, 132, 0.539);
+  background: var(--accent3-color);
   height: 200px;
   border-radius: 5px;
   height: 5px;
   margin: 0 auto;
 }
 .time,.date{
-  color: rgb(254, 189, 132);
+  color: white;
   margin: 5px;
 }
 .desc{
-  color: rgb(196, 255, 77);
+  color: white;
 }
 
 .weather-title {
@@ -619,23 +641,28 @@ h1{
 
 .weatherInfo {
   margin: 45px 0 10px 0;
-  border: 1px solid white;
 }
 
 .drinkNum {
-  border: 1px solid red;
-  min-height: 35ch;
   order: 2;
-  width: 100%;
+  text-align: center;
 }
 
 
+.drinkNum p {
+  margin: 30px 0;
+}
 
+.mix, .coastal, .drinkNum, .weatherInfo{
+  box-shadow: 5px 5px 25px;
+  margin: 25px 0;
+  padding: 15px;
+}
 
-
-
-
-
+.fruit-drink {
+  box-shadow: 5px 5px 25px;
+  margin: 25px 0;
+}
 
 
 
@@ -648,13 +675,13 @@ h1{
 
 form fieldset {
   margin: 2rem 0;
-  border: 1px solid #445ba9;
+  border: 1px solid #FFFFFF;
   border-radius: 10px;
   padding: .5rem 2%;
 }
 
 form legend {
-  color: #1565C0;
+  color: white;
   margin: 0 1.3rem;
   padding: 0 .5rem;
   font-size: 1.2rem;
@@ -665,7 +692,7 @@ form legend {
 form label.top, form div {
   display: block;
   padding-top: 1rem;
-  color: #13539c;
+  color: white;
   font-size: 1rem;
   font-family: var(--paragraph-font);
 }
@@ -677,13 +704,14 @@ form label.top input, form label.top select, textarea {
   border: solid 1px #999;
   border-radius: 4px;
   padding: .75rem;
-  color: #555;
+  color: var(--paragraph-background-color) #023047;
   width: 100%;
   max-width: 30rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(02, 30, 47, 0.8);
   justify-content: center;
   align-items: center;
 }
+
 
 form label.sbs {
   display: block;

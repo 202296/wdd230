@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
     
 </head>
 <body>
@@ -19,7 +23,7 @@
     <div class="banner" id="banner">
         15% Off Use Code: BTFOODS | free shipping over $49! <button class="button open-button">see details</button>
         <dialog class="modal" id="modal">
-            <button class="close-button">&times;</button>
+            🍎 
           <hr class="promot">
  <div class="modal-body">
           The promotion ends at 11:45 p.m. central time on March 20, 2023.
@@ -39,7 +43,7 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
     <header class="head-home">
       <div class="container">
         <div class="head">
-        <a href="#">
+        <a href="index.html">
           <picture>
             <source media="(min-width: 520px)" srcset="images/Red-House60.webp">
           <img class="logo" src="images/Red-House55.webp" alt="the_logo of bountiful foods">
@@ -93,54 +97,66 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
         <ul class="navigation">
             <li><a href="index.html" class="active nav-link">Home</a></li>
             <li><a href="fresh.html" class="nav-link">Fresh</a></li>
-            <li><a href="join.html" class="nav-link">Join</a></li>
             <li><a href="about.html" class="nav-link">About Us</a></li>
         </ul>
         <div class="login"> <i class="fas fa-user"></i> <span class="log"> <a href="fresh.html">Login</a> </span> </div>
     </nav>
-         <main class="main-home">
-          <section class="hero">
-            <picture class="hero_image">
-              <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/bigstock-Fresh-Fruits-assorted-Fruits1.webp" class="hero_image">
+    <section class="bountiful-banner">
+            <picture class="bountiful-banner-image">
+              <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/bigstock-Fresh-Fruits-assorted-Fruits1.webp">
               <source media="(min-width: 1024px)" srcset="images/bigstock-Fresh-Fruits-assorted-Fruits-1600.webp">
-            <img class="img" src="images/bigstock-Fresh-Fruits-assorted-Fruits-519.webp" alt="Chamber banner">
+            <img class="img" src="images/bigstock-Fresh-Fruits-assorted-Fruits-519.webp" alt="bountiful banner">
           </picture>
           <h1> <span class="welcome">WELCOME TO</span> <br> <span class="comp">BOUNTIFUL FOODS COMPANY</span> <br> <span class="moto">FRUIT FOR EVERY SEASON</span></h1>
     
           </section>
+         <main class="main-home">
+          <div class="hero">
+            <picture class="hero_image">
+              <source media="(min-width: 520px) and (max-width: 1023px)" srcset="images/bigstock-Fresh-Fruits-assorted-Fruits1.webp">
+              <source media="(min-width: 1024px)" srcset="images/bigstock-Fresh-Fruits-assorted-Fruits-1600.webp">
+            <img class="img" src="images/bigstock-Fresh-Fruits-assorted-Fruits-519.webp" alt="bountiful hero">
+          </picture>
+        </div>
           <section class="good-products">
-            <h2 class="food-heading">PRODUCTS</h2>
-            <div class="products">
-              <div class="product-foods">
-                <div class="gift">
-                  <h3>Fruit & Nut Red Tin Tray with Chocolate Leaves 52 OZ</h3>
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="gift">
+                      <h3>Pineapple Orchard Delight 48 OZ</h3>
+                    </div>
+                    <img src="https://placeimg.com/640/480/fruit"  data-src="images/Oval.webp" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gift">
+                      <h3>California Natural Sweet Fuji Apple Chips</h3>
+                    </div>
+                    <img src="https://placeimg.com/640/480/fruit"  data-src="images/AppleChips.webp" alt=""></div>
+                  <div class="swiper-slide">
+                    <div class="gift">
+                      <h3>Dried Fruit & Nut Wine Shaped Bamboo Cutting Board 31 OZ</h3>
+                    </div>
+                    <img src="https://placeimg.com/640/480/fruit"  data-src="images/Costcocomwineboardwhback.webp" alt=""></div>
+                  <div class="swiper-slide">
+                    <div class="gift">
+                      <h3>Fruit & Nut Red Tin Tray with Chocolate Leaves 52 OZ</h3>
+                    </div>
+                    <img src="https://placeimg.com/640/480/fruit"  data-src="images/THolidayTin.webp" alt=""></div>
+                  ...
                 </div>
-                <img src="https://placeimg.com/640/480/fruit"  data-src="images/THolidayTin.webp" alt="">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
               </div>
-
-              <div class="product-foods">
-                <div class="gift">
-                  <h3>Pineapple Orchard Delight 48 OZ</h3>
-                </div>
-                <img src="https://placeimg.com/640/480/fruit"  data-src="images/Oval.webp" alt="">
-              </div>
-              <div class="product-foods">
-                <div class="gift">
-                  <h3>California Natural Sweet Fuji Apple Chips</h3>
-                </div>
-                <img src="https://placeimg.com/640/480/fruit"  data-src="images/AppleChips.webp" alt="">
-              </div>
-              <div class="product-foods">
-                <div class="gift">
-                  <h3>Dried Fruit & Nut Wine Shaped Bamboo Cutting Board 31 OZ</h3>
-                </div>
-                <img src="https://placeimg.com/640/480/fruit"  data-src="images/Costcocomwineboardwhback.webp" alt="">
-              </div>
-            </div>
-          </section>
-          <section class="good-fruits">
-            <h2 class="food-heading">FRUITS</h2>
-            <div class="fruits">
+        
+              <div class="fruit-drink">
+            <!-- <div class="fruits">
             <div class="fruit-foods">
               <h2>Apples</h2>
             <img src="https://placeimg.com/640/480/fruit"  data-src="images/red-apples-at.webp" alt="">
@@ -165,12 +181,54 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
             <h2>Watermelon</h2>
             <img src="https://placeimg.com/640/480/fruit"   data-src="images/watermelon.webp" alt="">
           </div>
-        </div>
-          </section>
+        </div> -->
 
-          <section class="drinking">
-            <h2 class="food-heading">FRUIT DRINKS</h2>
-            <div class="drinks">
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <h2>Apples</h2>
+              <img src="https://placeimg.com/640/480/fruit"  data-src="images/red-apples-at.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <h2>Strawberry</h2>
+            <img src="https://placeimg.com/640/480/fruit" data-src="images/strawberry-royalty.webp" alt="">
+          </div>
+            <div class="swiper-slide">
+              <h2>Banana</h2>
+            <img src="https://placeimg.com/640/480/fruit"  data-src="images/banana-wallpaper.webp" alt="">
+              </div>
+            <div class="swiper-slide">
+              <h2>Mangoes</h2>
+            <img src="https://placeimg.com/640/480/fruit"   data-src="images/mangoes-composition.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <h2>Oranges</h2>
+            <img src="https://placeimg.com/640/480/fruit"    data-src="images/oranges.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <h2>Watermelon</h2>
+            <img src="https://placeimg.com/640/480/fruit"   data-src="images/watermelon.webp" alt="">
+              </div>
+
+              <!-- <div class="swiper-slide">
+              </div> -->
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        
+        </div>
+    
+
+      
+            <!-- <div class="drinks">
             <div class="drink">
               <h2>Ginger Juice</h2>
             <img src="https://placeimg.com/640/480/fruit"  data-src="images/Jamu-Juice-Turmeric-Ginger-Drink.webp" alt="">
@@ -187,9 +245,42 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
             <h2>Watermelon</h2>
             <img src="https://placeimg.com/640/480/fruit"  data-src="images/watermelon-juice.webp" alt="">
           </div>
+            </div> -->
+
+
+
+
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <h2>Ginger Juice</h2>
+                  <img src="https://placeimg.com/640/480/fruit"  data-src="images/Jamu-Juice-Turmeric-Ginger-Drink.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <h2>Cucumber Juice</h2>
+            <img src="https://placeimg.com/640/480/fruit"  data-src="images/cucumber-drink.webp" alt="">
+              </div>
+                <div class="swiper-slide">
+                  <h2>Strawberry Juice</h2>
+            <img src="https://placeimg.com/640/480/fruit"  data-src="images/strawberry-juice.webp" alt="">
+                  </div>
+                <div class="swiper-slide">
+                  <h2>Watermelon</h2>
+            <img src="https://placeimg.com/640/480/fruit"  data-src="images/watermelon-juice.webp" alt="">
+                  </div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
+              </div>
           </section>
-          <div class="story">
           <section class="mix">
             <h2>Mix Your Drink</h2>
             <p>Are you tired of drinking the same old store-bought fruit juices? Why not make your own fruit drink mix? It's easy, healthy, and a great way to experiment with different flavors.</p>
@@ -199,11 +290,9 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
           </section>
           <section class="drinkNum">
             <h2>Number of drinks</h2>
-            <p id="formdata"></p>
+            <p id="formdata">Mr/Mrs (user name) you have mixed (number of
+              drink) specialty drinks.</p>
           </section>
-
-          
-        </div>
         <section class="coastal">
             <h2> <span class="title">Near Us</span>  <br> Coastal Area of Grand-Bassam</h2>
             <p>Grand-Bassam is a historic town located on the southeastern coast of Ivory Coast, about 40 kilometers east of Abidjan, the country's largest city. The town was the French colonial capital of Ivory Coast from 1893 until 1900 and is now a UNESCO World Heritage site. The coastal area of Grand-Bassam is known for its beautiful beaches, lagoons, and fishing villages. The town has a population of around 84,000 people and covers an area of approximately 160 square kilometers. The climate in Grand-Bassam is tropical, with hot and humid conditions throughout the year. The average high temperature in Grand-Bassam ranges from 30°C (86°F) in January to 33°C (91°F) in March.</p>
@@ -250,10 +339,12 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
         <footer class="footer">
           <div class="foot">
             <div class="flogo">
+            <a href="index.html">
             <picture>
               <source media="(min-width: 520px)" srcset="images/Red-House150.webp">
           <img class="foot-logo" src="images/Red-House100.webp" alt="my_logo">
             </picture>
+          </a>
             <h3>Bountiful Foods</h3>
           </div>
           <div class="address-one">
@@ -274,18 +365,18 @@ We love you, Fruit Fam, but we can't apply these offers to any previous orders a
 
           <hr class="divide">
           <div class="foot-info">
-            <h4 id="info">#</h4>
-            <h4 id="medium">#</h4>
-            <h4 id="large">#</h4>
+            <h4 id="info">© 2023 Spirit of Enterprise Koko Mouhamed Jean Patrick WDD 230 Project Last Modification: 03/23/2023 18:23:03</h4>
+            <h4 id="medium">© 2023 Spirit of Enterprise | Koko Mouhamed Jean Patrick | WDD 230 Project | Last Modification: 03/23/2023 18:23:03</h4>
+            <h4 id="large">© 2023 Spirit of Enterprise | Koko Mouhamed Jean Patrick | WDD 230 Project | Last Modification: 03/23/2023 18:23:03</h4>
           </div> 
           <p>Weather data source: <a href="https://openweathermap.org/" target="_blank" >OpenWeatherMap</a></p>
         </footer>
   </div>
   <script src="https://kit.fontawesome.com/c11763813b.js" crossorigin="anonymous"></script>
-  <!-- <script src="scripts/fruit.js"></script> -->
-  <script src="scripts/storage.js"></script>
   <script src="scripts/lazyLoading.js"></script>
   <script src="scripts/final.js"></script>
   <script src="scripts/weather.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="scripts/slide.js"></script>
 </body>
 </html>
