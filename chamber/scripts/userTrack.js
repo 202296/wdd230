@@ -52,11 +52,3 @@ document.querySelector('form').addEventListener('submit', function(e) {
    // Submit the form
    this.submit();
  });
- 
-
- 
- 
-
-
-
-

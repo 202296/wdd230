@@ -1,0 +1,17 @@
+.wrapper::after {
+overflow: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 50ch;
+    height: 50ch;
+    padding: 50px;
+    text-align: center;
+    background-color: blue;
+    float: right;
+}
