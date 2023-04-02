@@ -31,6 +31,16 @@ html {
   background-color: var(--primary-color);
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: var(--accent3-color);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  background: var(--accent2-color);
+}
+
 #content {
   padding: 0;
   margin: 0 auto;
@@ -136,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .primaryNav {
     position: fixed;
-    top: 33ch;
+    top: 31ch;
     left: 100%;
     bottom: 0;
     width: 100%;
@@ -269,6 +279,262 @@ main p {
     padding: 25px 0;
     line-height: 2rem;
   }
+
+  img {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    margin: 15px 0;
+    background-color: var(--accent3-color);
+    color: #FFFFFF;
+    font-weight: 400;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 00.5rem;
+    max-width: 160px;
+  }
+
+  .btn .bx {
+    padding: 4px;
+    background-color: #023047;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    font-size: 20px;
+    margin: auto;
+    font-style: none;
+  }
+
+  .btn:hover {
+    background-color: var(--accent2-color);
+    transition: 0.2s ease;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading h1 {
+font-size: 1.6rem;
+font-weight: 600;
+margin: 25px 0 10px 20px;
+  }
+
+  .heading span {
+    color: var(--accent3-color);
+  }
+
+  /* .categories {
+    max-width: 968px;
+    margin: 0 auto;
+  } */
+
+  .products {
+    margin: 25px 0;
+  }
+
+  .fruits-box, .drinks-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 1rem;
+    margin-top: 5px;
+    padding: 20px;
+  }
+
+  .fruits-container {
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+
+  .fruit-foods, .drink {
+    position: relative;
+  }
+
+  .fruit-foods h2, .drink h2{
+    position: absolute;
+    top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .category-title {
+    margin: 30px 0 0 20px;
+  }
+
+  .drinkNum {
+    max-width: 700px;
+  }
+
+  .mix-drink {
+    padding: 45px;
+    max-width: 900px;
+  }
+
+  .mix-drink h2 {
+    margin: 15px;
+  }
+
+  .categories-container .box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .categories-container .box h2 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .categories-container .box span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .categories-container .box .bx {
+    padding: 10px;
+    background: var(--accent3-color);
+    color: var(--accent2-color);
+    border-radius: 5rem;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: -8%;
+    display: none;
+  }
+
+  .categories-container .box .bx:hover {
+    background: var(--accent1-color);
+    transition: 0.2s all linear;
+  }
+
+  .categories-container .box:hover .bx {
+    display: block;
+    transition: 0.2s all linear;
+  }
+
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 1.5rem;
+  }
+
+  .products-container .box {
+    padding: 20px;
+    box-shadow: 1px 2px 11px 4px rgb(14, 55, 54 / 15%);
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .products-container .box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .products-container .box span {
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .products-container .box h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: var(--accent3-color);
+
+  }
+
+  .about {
+    max-width: 968px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about a {
+    text-decoration: none;
+  }
+
+  .about-text span {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .about-text p {
+    margin: 0.5rem 0 1rem;
+  }
+
+  .customers {
+    max-width: 968px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .customers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .customers-container .box {
+    padding: 20;
+    box-shadow: 1px 2px 11px 4px rgb(14, 55, 54 / 15%);
+    border-radius: 0.5rem;
+    border-bottom: 7px solid var(--accent3-color);
+  }
+
+  .customers-container .box:hover {
+    transform: translateY(10px);
+    transition: 0.2s all linear;
+  }
+
+  .customers-container .box .bx {
+    font-size: 24px;
+    color: #FB8500;
+  }
+
+  .customers-container .box .stars .bx {
+    font-size: 1rem;
+    color: var(--accent2-color);
+  }
+
+  .customers-container .box p {
+    font-size: 0.938rem;
+  }
+
+  .review-profile {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    column-gap: 0.5rem;
+  }
+
+  .review-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .review-profile h3 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
   
   .modal::backdrop {
     background-color: #8ECAE6;
@@ -309,16 +575,6 @@ main p {
     font-size: 1.1rem;
     font-family: var(--paragraph-font);
   }
-
-  .swiper {
-    width: 100%;
-    margin: 25px 0;
-  }
-
-  .swiper-slide img{
-       width: 100%;
-  }
-
 
   footer {
 	color: #FFFFFF;
@@ -406,25 +662,6 @@ main p {
 	display: none;
  }
 
-.hero {
-  text-align: center;
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero h1 {
-  color: #000000;
-  font-size: 1.8rem;
-  font-family: var(--heading-font);
-  font-weight: bold;
-  text-shadow: 4px 4px 10px rgb(50, 51, 54);
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20ch;
-}
 
 .bountiful-banner img {
   width: 100%;
@@ -440,19 +677,22 @@ main p {
 .mix {
   padding: 25px;
   min-height: 35ch;
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.mix a {
+  text-decoration: none;
 }
 
 .good-fruits, .good-products, .drinking, .mix{
   text-align: center;
 }
 
-.hero {
-  display: none;
-}
-
-.bountiful-banner h1, .good-products h2 {
+.bountiful-banner h1{
 color: #FFFFFF;
-font-size: 1.8rem;
 font-family: var(--heading-font);
 text-shadow: 4px 4px 10px black;
 position: absolute;
@@ -466,9 +706,6 @@ transform: translate(-50%, -50%);
   font-size: 2rem;
 }
 
-.product-foods{
-  margin: 0 0 15px 0;
-}
 
 .coastal{
   text-align: center;
@@ -478,25 +715,6 @@ transform: translate(-50%, -50%);
 .coastal h2 {
   margin: 15px;
 }
-
-.gift {
-  color: #FFFFFF;
-  font-size: 1.8rem;
-  font-family: var(--heading-font);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    width: 90%;
-    background-color: #CCD1D1;
-    padding: 25px;
-    opacity: 0.7;
-  }
-
-  .gift h3 {
-    color: #000000;
-    font-weight: bold;
-  }
 
 .head_join {
 padding: 15px;
@@ -522,9 +740,6 @@ object-fit: cover;
 position: relative;
 }
 
-.product-foods img {
-  width: 100%;
-}
 
 .comp, .moto {
   font-style: italic;
@@ -552,6 +767,7 @@ h1{
   text-align: center;
   color: aliceblue;
 }
+
 #city{
   font-size: 30px;
 }
