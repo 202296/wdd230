@@ -53,6 +53,16 @@
     gap: 1.5rem;
      }
 
+     #formcontent {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      column-gap: 25px;
+    }
+
+    .display-result {
+      margin-top: 45ch;
+    }
+
     .final-Story {
       display: grid;
       grid-template-columns: 1fr 1fr;
