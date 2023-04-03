@@ -30,6 +30,10 @@
         order: 2;
     }
 
+    .bountiful-banner h1{
+      width: 50ch;
+     }
+
     .coastal-weather {
     grid-template-columns: 1fr 2fr;
      }
@@ -72,7 +76,7 @@
       }
 
       .welcome {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
       }
 
 }

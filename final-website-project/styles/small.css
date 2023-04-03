@@ -144,6 +144,10 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
 }
 
+.cross {
+  display: none;
+}
+
 .primaryNav {
     position: fixed;
     top: 31ch;
@@ -288,13 +292,13 @@ main p {
     padding: 0.6rem 1rem;
     margin: 15px 0;
     background-color: var(--accent3-color);
-    color: #FFFFFF;
-    font-weight: 400;
+    color: #000000;
+    font-weight: 600;
     border-radius: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 00.5rem;
+    column-gap: 0.5rem;
     max-width: 160px;
   }
 
@@ -305,7 +309,6 @@ main p {
     border-radius: 1rem;
     font-size: 20px;
     margin: auto;
-    font-style: none;
   }
 
   .btn:hover {
@@ -360,6 +363,7 @@ margin: 25px 0 10px 20px;
     top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #000000;
   }
 
   .category-title {
@@ -491,7 +495,7 @@ margin: 25px 0 10px 20px;
   }
 
   .customers-container .box {
-    padding: 20;
+    padding: 20px;
     box-shadow: 1px 2px 11px 4px rgb(14, 55, 54 / 15%);
     border-radius: 0.5rem;
     border-bottom: 7px solid var(--accent3-color);
@@ -696,9 +700,10 @@ color: #FFFFFF;
 font-family: var(--heading-font);
 text-shadow: 4px 4px 10px black;
 position: absolute;
-top: 30%;
+top: 40%;
 left: 50%;
 transform: translate(-50%, -50%);
+width: 20ch;
 }
 
 .food-heading, .title{
@@ -755,7 +760,7 @@ position: relative;
 }
 
 .welcome {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 
@@ -796,8 +801,8 @@ h1{
 }
 #clouds{
   font-size: 20px;
-  background: var(--paragraph-background-color);
-  padding: 2px 20px;
+  background: var(--nav-link-color);
+  padding: 5px 20px;
   border-radius: 15px;
 }
 
@@ -828,7 +833,7 @@ h1{
 }
 .cast-header{
   color: aliceblue;
-  background: var(--paragraph-background-color);
+  background: var(--nav-link-color);
   width: max-content;
   padding: 5px 15px;
   border-radius: 20px;
