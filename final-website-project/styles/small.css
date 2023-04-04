@@ -10,15 +10,18 @@
   --heading-font: 'Roboto', sans-serif;
   --paragraph-font: 'Open Sans', sans-serif;
 
-  --headline-color-on-white: #17202A;  /* headlines on a white background */ 
+  --headline-color-on-white: #000000;  /* headlines on a white background */ 
   --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #273746; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #808B96;
+  --paragraph-background-color: #023047;
   --nav-link-color: #000000;
   --nav-background-color: #FFFFFF;
-  --nav-hover-link-color: #CCD1D1;
-  --nav-hover-background-color: #34495E;
+  --nav-hover-link-color: #023047;
+  --nav-hover-background-color: #FB8500;
+  --link-color: #000000;
+  --link-backgroung-color: #FB8500;
+  --link-hover-background-color: #FFB703;
 }
 
 * {
@@ -185,8 +188,13 @@ h1, h2, h3, h4, h5, h6 {
     text-underline-offset: 0.5rem;
   }
 
+  .nav-link[aria-current="page"]:hover {
+    text-decoration: underline solid #000000 0.15rem;
+  }
+
 .primaryNav a:hover {
-    background-color: var(--accent4-color);
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
 }
 
 
@@ -246,21 +254,31 @@ li {
     font-weight: 100;
     color: #FFFFFF;
   }
-
-.main-home {
-  background-color: rgba(02, 30, 47, 1.0);
-  opacity: 1;
-  color: #FFFFFF;
-  margin-bottom: 15px;
-  margin: 0 auto;
-}
-
-main p {
-	font-family: var(--paragraph-font);
-	color: var(--paragraph-color-on-color);
-	font-size: 1.1rem;
+  
+  .modal::backdrop {
+    background-color: #8ECAE6;
+    opacity: .7;
+  }
+  
+  .open-button, .close-bton {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px;
+    background-color: #FB8500;
+    border-radius: 15px;
   }
 
+  .open-button{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: #FFFFFF;
+  }
+
+  .promot {
+    margin: 30px 0;
+  }
+  
   .modal {
     position: relative;
     top: 2%;
@@ -274,9 +292,66 @@ main p {
     line-height: 2rem;
   }
 
+  .modal-body {
+    padding: 35px;
+  }
+  
+  
+  .modal p {
+      margin: 10px;
+    font-size: 1.1rem;
+    font-family: var(--paragraph-font);
+  }
+
+
+.main-home {
+  background-color: rgba(02, 30, 47, 1.0);
+  opacity: 1;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  margin: 0 auto;
+}
+
+
+main p {
+	font-family: var(--paragraph-font);
+	color: var(--paragraph-color-on-color);
+	font-size: 1.1rem;
+  }
+
   img {
     width: 100%;
   }
+  
+  .bountiful-banner-image {
+width: 100%;
+object-fit: cover;
+position: relative;
+
+}
+
+.comp, .moto {
+  font-style: italic;
+}
+
+.comp {
+  font-size: 1.6rem;
+}
+
+.moto {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.welcome {
+  font-size: 1.4rem;
+}
+
+
+h1 {
+  text-align: center;
+}
+
 
   .btn {
     padding: 0.6rem 1rem;
@@ -506,40 +581,7 @@ margin: 25px 0 10px 20px;
     font-weight: 600;
   }
   
-  .modal::backdrop {
-    background-color: #8ECAE6;
-    opacity: .7;
-  }
   
-  .open-button, .close-bton {
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 8px;
-    background-color: #FB8500;
-    border-radius: 15px;
-  }
-
-  .open-button{
-    border: none;
-    background: none;
-    text-decoration: underline;
-    color: #FFFFFF;
-  }
-
-  .promot {
-    margin: 30px 0;
-  }
-
-  .modal-body {
-    padding: 35px;
-  }
-  
-  
-  .modal p {
-      margin: 10px;
-    font-size: 1.1rem;
-    font-family: var(--paragraph-font);
-  }
 
   footer {
 	color: #FFFFFF;
@@ -667,13 +709,13 @@ transform: translate(-50%, -50%);
 width: 20ch;
 }
 
-.food-heading, .title{
+.food-heading, .title {
   margin: 45px 15px 25px 15px;
   font-size: 2rem;
 }
 
 
-.coastal{
+.coastal {
   text-align: center;
   padding: 0 50px;
 }
@@ -682,68 +724,24 @@ width: 20ch;
   margin: 15px;
 }
 
-.head_join {
-padding: 15px;
-border-radius: 12px;
-position: absolute;
-bottom: 8%;
-right: 5%;
-background-color: #219EBC;
-box-shadow: 5px 5px 25px;;
-}
 
-.head_join a {
-font-size: 1.2rem;
-padding: 10px;
-font-weight: bold;
-text-decoration: none;
-color: black;
-}
-
-.bountiful-banner-image{
-width: 100%;
-object-fit: cover;
-position: relative;
-}
-
-
-.comp, .moto {
-  font-style: italic;
-}
-
-.comp {
-  font-size: 1.6rem;
-}
-
-.moto {
-  font-size: 1.3rem;
-  font-style: italic;
-}
-
-.welcome {
-  font-size: 1.4rem;
-}
-
-
-h1{
-  text-align: center;
-}
-
-.weather{
+.weather {
   text-align: center;
   color: aliceblue;
 }
 
-#city{
+#city {
   font-size: 30px;
 }
-.weather img{
+
+.weather img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   background: rgba(240, 248, 255, 0.408);
 }
-#temperature{
+
+#temperature {
   font-size: 50px;
   margin: 0;
   margin-left: 30px;
@@ -754,20 +752,22 @@ h1{
   font-size: 1.3rem;
   margin: 10px;
 }
-.temp-box{
+
+.temp-box {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 30px 0;
 }
-#clouds{
+
+#clouds {
   font-size: 20px;
   background: var(--nav-link-color);
   padding: 5px 20px;
   border-radius: 15px;
 }
 
-.curTemp{
+.curTemp {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -775,24 +775,29 @@ h1{
   margin: 0 50px;
   color: white;
 }
-.next{
+
+.next {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
 }
-.next p,.next h3{
+
+.next p,.next h3 {
   margin: 3px 0;
 }
-.forecstD{
+
+.forecstD {
   padding: 10px;
   color: aliceblue;
 }
-.weekF{
+
+.weekF {
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
-.cast-header{
+
+.cast-header {
   color: aliceblue;
   background: var(--nav-link-color);
   width: max-content;
@@ -801,18 +806,21 @@ h1{
   font-size: 18px;
   margin: 10px;
 }
-.divider{
+
+.divider {
   background: var(--accent3-color);
   height: 200px;
   border-radius: 5px;
   height: 5px;
   margin: 0 auto;
 }
-.time,.date{
+
+.time,.date {
   color: white;
   margin: 5px;
 }
-.desc{
+
+.desc {
   color: white;
 }
 
@@ -848,9 +856,7 @@ h1{
 }
 
 
-
-
-
+/* Form styles */
 
 .form {
   padding: 0 2%;
@@ -966,6 +972,8 @@ caption {
   color: #FFFFFF;
   height: 20ch;
 }
+
+/* about styles */
 
 .main-about {
   padding: 15px;

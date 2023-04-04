@@ -17,6 +17,11 @@
         display: flex;
     }
 
+    .nav a:hover {
+      color: #023047;
+      background-color: #FB8500;
+    }
+
     .social-media {
         order: 2;
     }
