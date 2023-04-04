@@ -908,10 +908,6 @@ form label.sbs {
   color: #555;
 }
 
-#membtble {
-  display: none;
-}
-
 #formcontent {
   display: flex;
   flex-flow: column wrap;
@@ -967,10 +963,17 @@ caption {
   background-color: rgba(02, 30, 47, 1.0);
 }
 
+.star {
+  color: red;
+}
+
 #output {
   border: 2px solid white;
   color: #FFFFFF;
-  height: 20ch;
+  min-height: 20ch;
+  padding: 15px;
+  margin-top: 15px;
+
 }
 
 /* about styles */

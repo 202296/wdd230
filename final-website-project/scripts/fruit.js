@@ -85,7 +85,7 @@ const storedTotalItems = localStorage.getItem('myDivTotalItems');
     
     // create formatted output
     const outputText = `
-         ${storedTotalItems}inputs = (${firstName}, ${email}, ${phone}, ${mySelect}, ${mySelect1}, ${mySelect2}, ${special}), Order date: ${currentDate}, total amount of carbohydrates: ${totalCarbs}, protein: ${totalProtein}, fat: ${totalFat}, calories: ${totalCalories}, and sugar: ${totalSugar}`;
+         ${storedTotalItems} inputs = (${firstName}, ${email}, ${phone}, ${mySelect}, ${mySelect1}, ${mySelect2}, ${special}), Order date: ${currentDate}, total amount of carbohydrates: ${totalCarbs.toFixed(2)}, protein: ${totalProtein.toFixed(2)}, fat: ${totalFat.toFixed(2)}, calories: ${totalCalories.toFixed(2)}, and sugar: ${totalSugar.toFixed(2)}`;
    // display output on page
     output.innerHTML = outputText;
 localStorage.setItem('myDivTotalItems', totalInputs);
