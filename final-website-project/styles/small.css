@@ -893,10 +893,10 @@ form label.top input, form label.top select, textarea {
   border: solid 1px #999;
   border-radius: 4px;
   padding: .75rem;
-  color: var(--paragraph-background-color);
+  color: gray;
   width: 100%;
   max-width: 30rem;
-  background-color: rgba(02, 30, 47, 0.8);
+  background-color: #FFFFFF;
   justify-content: center;
   align-items: center;
 }
